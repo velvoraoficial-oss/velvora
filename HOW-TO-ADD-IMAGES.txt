@@ -1,0 +1,38 @@
+<!-- 
+=====================================================
+VELVORA - HOW TO ADD YOUR LOGO & BANNER
+=====================================================
+
+YOUR LOGO (navbar):
+Replace the text "VELVORA" in navbar with your image:
+
+CURRENT (text logo):
+<a href="index.html" class="nav-logo">VELVORA<span>Style That Speaks</span></a>
+
+REPLACE WITH (image logo):
+<a href="index.html" class="nav-logo">
+  <img src="images/logo.jpg" alt="VELVORA" style="height:45px;width:auto;object-fit:contain;">
+</a>
+
+=====================================================
+
+YOUR BANNER (hero section):
+Add your banner as hero background:
+
+CURRENT hero section opening:
+<section class="hero">
+
+REPLACE WITH:
+<section class="hero" style="background-image:url('images/banner.jpg');background-size:cover;background-position:center;">
+
+=====================================================
+
+YOUR FEMALE INFLUENCER IMAGE:
+Use in hero or any section:
+<img src="images/female.jpg" alt="VELVORA Style" style="width:100%;border-radius:12px;">
+
+YOUR MALE INFLUENCER IMAGE:
+<img src="images/male.jpg" alt="VELVORA Men's Style" style="width:100%;border-radius:12px;">
+
+=====================================================
+-->
