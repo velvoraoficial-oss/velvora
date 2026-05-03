@@ -30,9 +30,13 @@
     /* NAVBAR */
     .navbar{background:var(--black);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(0,0,0,.3);transition:box-shadow .3s}
     .navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.2)}
-    .nav-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);text-decoration:none;letter-spacing:5px;font-weight:700;line-height:1;text-transform:uppercase;transition:color .3s}
-    .nav-logo:hover{color:var(--rose-gold-light)}
-    .nav-logo span{color:rgba(255,255,255,.5);font-size:.48rem;letter-spacing:5px;display:block;text-align:center;font-family:'Lato',sans-serif;font-weight:300;text-transform:uppercase;margin-top:2px}
+    .nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:center;line-height:1;transition:opacity .3s;gap:3px}
+    .nav-logo:hover{opacity:.85}
+    .nav-logo .logo-v-img{height:38px;width:auto;object-fit:contain;display:block}
+    .nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;text-transform:uppercase}
+    .nav-logo .logo-black{color:var(--white)}
+    .nav-logo .logo-rose{color:var(--rose-gold)}
+    .nav-logo .logo-tagline{color:rgba(255,255,255,.35);font-size:.38rem;letter-spacing:5px;display:block;text-align:center;font-family:'Lato',sans-serif;font-weight:300;text-transform:uppercase;margin-top:1px}
     .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
     .nav-links a{color:var(--white);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:400}
     .nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
@@ -137,7 +141,9 @@
     /* FOOTER */
     footer{background:var(--black);color:rgba(255,255,255,.7);padding:55px 5% 25px}
     .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
-    .footer-logo{font-family:'Playfair Display',serif;font-size:2rem;color:var(--rose-gold);letter-spacing:5px;margin-bottom:15px;display:block;text-transform:uppercase;font-weight:700}
+    .footer-logo{font-family:'Playfair Display',serif;font-size:2rem;letter-spacing:4px;margin-bottom:15px;display:block;text-transform:uppercase;font-weight:700}
+    .footer-logo .logo-black{color:var(--white)}
+    .footer-logo .logo-rose{color:var(--rose-gold)}
     .footer-brand p{font-size:.85rem;line-height:1.7;margin-bottom:20px}
     .footer-social{display:flex;gap:10px}
     .footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(183,110,121,.15);display:flex;align-items:center;justify-content:center;color:var(--rose-gold);text-decoration:none;transition:all .3s;font-size:.85rem}
@@ -159,7 +165,13 @@
 
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
-  <a href="index.html" class="nav-logo">VELVORA<span>Style That Speaks</span></a>
+  <a href="index.html" class="nav-logo">
+    <img src="images/v-symbol.png" alt="VELVORA" class="logo-v-img">
+    <div class="logo-text">
+      <span class="logo-black">VELVO</span><span class="logo-rose">RA</span>
+    </div>
+    <span class="logo-tagline">Style That Speaks</span>
+  </a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="womens-fashion.html">Women</a></li>
@@ -273,7 +285,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <span class="footer-logo">VELVORA</span>
+      <span class="footer-logo"><span class="logo-black">VELVO</span><span class="logo-rose">RA</span></span>
       <p>Your ultimate destination for fashion, beauty and lifestyle inspiration. Curating the best styles for modern women and men.</p>
       <div class="footer-social">
         <a href="#"><i class="fab fa-pinterest"></i></a>
