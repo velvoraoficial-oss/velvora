@@ -1,0 +1,28 @@
+# VELVORA - robots.txt
+# https://velvora.github.io
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Allow Googlebot specifically
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Allow Pinterest bot (important for your Pinterest traffic)
+User-agent: Pinterestbot
+Allow: /
+
+# Disallow any admin or private folders (add if needed)
+# User-agent: *
+# Disallow: /private/
+
+# Sitemap location - very important for SEO
+Sitemap: https://velvora.github.io/sitemap.xml
+
+# Crawl delay (optional - remove if causes issues)
+Crawl-delay: 1

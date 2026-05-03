@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty & Skincare | VELVORA - Style That Speaks</title>
+  <meta name="description" content="Shop the best beauty and skincare products on Amazon. Curated serums, moisturizers, makeup palettes and more. Hand-picked by VELVORA.">
+  <meta name="keywords" content="beauty skincare, vitamin c serum, retinol cream, eyeshadow palette, amazon beauty, VELVORA">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://velvora.github.io/beauty-skincare.html">
+  <meta property="og:title" content="Beauty & Skincare - VELVORA">
+  <meta property="og:description" content="Top-rated beauty and skincare picks. Shop on Amazon with fast US shipping.">
+  <meta property="og:url" content="https://velvora.github.io/beauty-skincare.html">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--rose-gold:#B76E79;--rose-gold-light:#D4A0A8;--rose-gold-dark:#8B4E58;--black:#1a1a1a;--dark-gray:#2d2d2d;--medium-gray:#666;--light-gray:#f0f0f0;--beige:#F5F0EB;--cream:#FAF7F4;--white:#fff;--gold:#C9A96E}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--black);line-height:1.7}
+    .navbar{background:var(--black);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(0,0,0,.3)}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);text-decoration:none;letter-spacing:3px;font-weight:700;line-height:1}
+    .nav-logo span{color:var(--white);font-size:.55rem;letter-spacing:4px;display:block;text-align:center;font-family:'Lato',sans-serif;font-weight:300}
+    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
+    .nav-links a{color:var(--white);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s}
+    .nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
+    .nav-search{display:flex;align-items:center;background:rgba(255,255,255,.08);border-radius:25px;padding:6px 15px;border:1px solid rgba(183,110,121,.3)}
+    .nav-search input{background:none;border:none;color:var(--white);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
+    .nav-search input::placeholder{color:rgba(255,255,255,.45)}
+    .nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
+    .hamburger{display:none;color:var(--white);font-size:1.5rem;cursor:pointer}
+    .mobile-menu{display:none;flex-direction:column;background:var(--dark-gray);padding:20px 5%}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{color:var(--white);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.9rem}
+    .page-hero{background:linear-gradient(135deg,#7B5E6A 0%,var(--black) 100%);padding:70px 5%;text-align:center}
+    .page-hero-tag{display:inline-block;background:rgba(255,255,255,.1);color:var(--rose-gold-light);font-size:.7rem;letter-spacing:4px;text-transform:uppercase;padding:6px 20px;border-radius:20px;margin-bottom:18px;border:1px solid rgba(183,110,121,.3)}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);color:var(--white);margin-bottom:12px}
+    .page-hero h1 span{color:var(--rose-gold);font-style:italic}
+    .page-hero p{color:rgba(255,255,255,.65);font-size:.95rem;max-width:500px;margin:0 auto}
+    .page-search{background:var(--white);padding:28px 5%;border-bottom:1px solid rgba(183,110,121,.1);box-shadow:0 2px 15px rgba(0,0,0,.05)}
+    .search-wrap{max-width:650px;margin:0 auto}
+    .search-bar{display:flex;background:var(--beige);border:2px solid transparent;border-radius:50px;overflow:hidden;transition:border-color .3s}
+    .search-bar:focus-within{border-color:var(--rose-gold)}
+    .search-bar input{flex:1;padding:13px 22px;border:none;background:none;font-size:.93rem;outline:none;font-family:'Lato',sans-serif;color:var(--black)}
+    .search-bar button{background:var(--rose-gold);color:var(--white);border:none;padding:13px 28px;cursor:pointer;font-size:.82rem;font-family:'Lato',sans-serif;letter-spacing:1px;text-transform:uppercase;font-weight:700;transition:background .3s}
+    .search-bar button:hover{background:var(--rose-gold-dark)}
+    .filters-bar{background:var(--beige);padding:20px 5%;display:flex;gap:15px;align-items:center;flex-wrap:wrap;border-bottom:1px solid rgba(183,110,121,.1)}
+    .filter-label{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--medium-gray);font-weight:700}
+    .filter-select{padding:8px 16px;border:1.5px solid rgba(183,110,121,.3);border-radius:20px;background:var(--white);font-family:'Lato',sans-serif;font-size:.82rem;color:var(--black);cursor:pointer;outline:none;transition:border-color .3s}
+    .filter-select:focus{border-color:var(--rose-gold)}
+    .result-count{margin-left:auto;font-size:.82rem;color:var(--medium-gray)}
+    .products-section{padding:50px 5%}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px;max-width:1300px;margin:0 auto}
+    .product-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .3s}
+    .product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(183,110,121,.15)}
+    .product-image-wrap{position:relative;height:260px;overflow:hidden;background:var(--beige)}
+    .product-image-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .product-card:hover .product-image-wrap img{transform:scale(1.05)}
+    .product-badge{position:absolute;top:12px;left:12px;background:var(--rose-gold);color:var(--white);padding:4px 12px;border-radius:12px;font-size:.65rem;letter-spacing:1px;text-transform:uppercase;font-weight:700;z-index:2}
+    .product-discount{position:absolute;top:12px;right:12px;background:var(--black);color:var(--white);padding:4px 10px;border-radius:12px;font-size:.65rem;font-weight:700;z-index:2}
+    .product-overlay{position:absolute;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+    .product-card:hover .product-overlay{opacity:1}
+    .btn-quick-view{background:var(--white);color:var(--black);padding:10px 22px;border-radius:25px;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all .3s}
+    .btn-quick-view:hover{background:var(--rose-gold);color:var(--white)}
+    .product-info{padding:18px}
+    .product-category-tag{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose-gold);font-weight:700}
+    .product-name{font-family:'Playfair Display',serif;font-size:1rem;margin:6px 0;line-height:1.35}
+    .product-name a{color:var(--black);text-decoration:none;transition:color .3s}
+    .product-name a:hover{color:var(--rose-gold)}
+    .product-short-desc{font-size:.82rem;color:var(--medium-gray);margin-bottom:10px;line-height:1.5}
+    .product-rating{display:flex;align-items:center;gap:4px;margin-bottom:10px}
+    .star{width:14px;height:14px}
+    .star.filled path{fill:#C9A96E}
+    .star.half path{fill:#C9A96E;opacity:.6}
+    .star.empty path{fill:#ddd}
+    .rating-count{font-size:.75rem;color:var(--medium-gray)}
+    .product-price-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+    .product-price{font-size:1.1rem;font-weight:700;color:var(--black)}
+    .product-original-price{font-size:.85rem;color:var(--medium-gray);text-decoration:line-through}
+    .btn-buy{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--black);color:var(--white);padding:11px;border-radius:8px;text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all .3s;width:100%}
+    .btn-buy:hover{background:var(--rose-gold)}
+    .btn-buy svg{width:16px;height:16px}
+    .no-results{text-align:center;padding:70px 20px;display:none}
+    .no-results i{font-size:3rem;color:var(--rose-gold-light);margin-bottom:15px;display:block}
+    .no-results h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:10px}
+    footer{background:var(--black);color:rgba(255,255,255,.7);padding:55px 5% 25px;margin-top:60px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+    .footer-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);letter-spacing:3px;margin-bottom:15px;display:block}
+    .footer-brand p{font-size:.85rem;line-height:1.7;margin-bottom:20px}
+    .footer-social{display:flex;gap:10px}
+    .footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(183,110,121,.15);display:flex;align-items:center;justify-content:center;color:var(--rose-gold);text-decoration:none;transition:all .3s;font-size:.85rem}
+    .footer-social a:hover{background:var(--rose-gold);color:var(--white)}
+    .footer-col h5{color:var(--white);font-size:.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-family:'Playfair Display',serif}
+    .footer-col ul{list-style:none}
+    .footer-col ul li{margin-bottom:10px}
+    .footer-col ul li a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;transition:color .3s}
+    .footer-col ul li a:hover{color:var(--rose-gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;text-align:center;font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.8}
+    @media(max-width:768px){.nav-links,.nav-search{display:none}.hamburger{display:block}.footer-grid{grid-template-columns:1fr}.filters-bar{flex-direction:column;align-items:flex-start}.result-count{margin-left:0}}
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">VELVORA<span>Style That Speaks</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="womens-fashion.html">Women</a></li>
+    <li><a href="mens-fashion.html">Men</a></li>
+    <li><a href="beauty-skincare.html" class="active">Beauty</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-search">
+    <input type="text" id="navSearchInput" placeholder="Search..." data-search-input>
+    <button data-search-btn><i class="fas fa-search"></i></button>
+  </div>
+  <div class="hamburger" id="menuToggle"><i class="fas fa-bars"></i></div>
+</nav>
+<nav class="mobile-menu" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="womens-fashion.html">Women's Fashion</a>
+  <a href="mens-fashion.html">Men's Fashion</a>
+  <a href="beauty-skincare.html">Beauty & Skincare</a>
+  <a href="blog.html">Blog</a>
+</nav>
+
+<section class="page-hero">
+  <span class="page-hero-tag">💄 Beauty Collection</span>
+  <h1>Beauty & <span>Skincare</span></h1>
+  <p>Top-rated serums, moisturizers and makeup picks. Every product curated from Amazon's best.</p>
+</section>
+
+<section class="page-search">
+  <div class="search-wrap">
+    <div class="search-bar" data-search-form>
+      <input type="text" id="pageSearch" placeholder="Search beauty products..." data-search-input>
+      <button data-search-btn><i class="fas fa-search"></i> Search</button>
+    </div>
+  </div>
+</section>
+
+<div class="filters-bar">
+  <span class="filter-label">Filter:</span>
+  <select class="filter-select" id="subcatFilter" onchange="applyFilters()">
+    <option value="">All Products</option>
+    <option value="Serums">Serums</option>
+    <option value="Moisturizers">Moisturizers</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Cleansers">Cleansers</option>
+  </select>
+  <select class="filter-select" id="priceFilter" onchange="applyFilters()">
+    <option value="">Any Price</option>
+    <option value="25">Under $25</option>
+    <option value="50">Under $50</option>
+    <option value="100">Under $100</option>
+  </select>
+  <select class="filter-select" id="sortFilter" onchange="applyFilters()">
+    <option value="">Sort By</option>
+    <option value="price-asc">Price: Low to High</option>
+    <option value="price-desc">Price: High to Low</option>
+    <option value="rating">Top Rated</option>
+  </select>
+  <span class="result-count" id="resultCount">Loading...</span>
+</div>
+
+<section class="products-section">
+  <div class="products-grid" id="productsGrid"></div>
+  <div class="no-results" id="noResults">
+    <i class="fas fa-search"></i>
+    <h3>No products found</h3>
+    <p>Try adjusting your search or filters</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">VELVORA</span>
+      <p>Your ultimate destination for fashion and beauty inspiration.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Shop</h5><ul>
+      <li><a href="womens-fashion.html">Women's Fashion</a></li>
+      <li><a href="mens-fashion.html">Men's Fashion</a></li>
+      <li><a href="beauty-skincare.html">Beauty & Skincare</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Explore</h5><ul>
+      <li><a href="blog.html">Style Blog</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Company</h5><ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 VELVORA. All rights reserved. | Style That Speaks ✨</p>
+    <p style="margin-top:8px;font-size:.72rem"><strong>Affiliate Disclaimer:</strong> VELVORA participates in the Amazon Associates Program. We earn commissions from qualifying purchases at no extra cost to you.</p>
+  </div>
+</footer>
+
+<!-- ✅ SCRIPTS AT BOTTOM -->
+<script src="products.js"></script>
+<script src="posts.js"></script>
+<script src="search.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    renderProducts(getProductsByCategory('beauty-skincare'));
+  });
+
+  function renderProducts(products) {
+    const grid = document.getElementById('productsGrid');
+    const noResults = document.getElementById('noResults');
+    const count = document.getElementById('resultCount');
+    if (!products || products.length === 0) {
+      grid.innerHTML = '';
+      noResults.style.display = 'block';
+      count.textContent = '0 products';
+      return;
+    }
+    noResults.style.display = 'none';
+    count.textContent = products.length + ' products';
+    grid.innerHTML = products.map(p => buildProductCard(p)).join('');
+  }
+
+  function applyFilters() {
+    let products = getProductsByCategory('beauty-skincare');
+    const subcat = document.getElementById('subcatFilter').value;
+    const maxPrice = document.getElementById('priceFilter').value;
+    const sort = document.getElementById('sortFilter').value;
+    const query = document.getElementById('pageSearch').value.toLowerCase().trim();
+    if (subcat) products = products.filter(p => p.subcategory === subcat);
+    if (maxPrice) products = Search.filterByPrice(products, maxPrice);
+    if (query) products = products.filter(p =>
+      p.name.toLowerCase().includes(query) ||
+      p.shortDesc.toLowerCase().includes(query) ||
+      (p.tags||[]).some(t => t.toLowerCase().includes(query))
+    );
+    if (sort) products = Search.sortProducts(products, sort);
+    renderProducts(products);
+  }
+
+  document.getElementById('pageSearch').addEventListener('keyup', applyFilters);
+</script>
+</body>
+</html>

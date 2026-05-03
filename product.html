@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="metaTitle">Product | VELVORA</title>
+  <meta name="description" id="metaDesc" content="Shop premium products at VELVORA.">
+  <meta name="robots" content="index, follow">
+  <meta id="ogTitle" property="og:title" content="Product | VELVORA">
+  <meta id="ogDesc" property="og:description" content="">
+  <meta id="ogImage" property="og:image" content="">
+  <meta id="ogUrl" property="og:url" content="">
+  <meta name="pinterest-rich-pin" content="true">
+  <link rel="stylesheet" href="style.css">
+  <script id="schemaProduct" type="application/ld+json"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">VEL<span>V</span>ORA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="womens-fashion.html">Women</a></li>
+      <li><a href="mens-fashion.html">Men</a></li>
+      <li><a href="beauty-skincare.html">Beauty</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <form class="nav-search" data-search-form>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search products..." data-search-input>
+      <button type="submit" class="nav-search-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </form>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="womens-fashion.html">Women's Fashion</a>
+  <a href="mens-fashion.html">Men's Fashion</a>
+  <a href="beauty-skincare.html">Beauty & Skincare</a>
+  <a href="blog.html">Blog</a>
+</nav>
+
+<!-- Breadcrumb -->
+<div style="background:var(--cream-dark);padding:12px 0;border-bottom:1px solid var(--border)">
+  <div class="container">
+    <nav class="breadcrumb" style="justify-content:flex-start;color:var(--text-muted)">
+      <a href="index.html" style="color:var(--rose-gold)">Home</a>
+      <span id="breadCatLink"></span>
+      <span id="breadProductName" style="color:var(--black-soft)"></span>
+    </nav>
+  </div>
+</div>
+
+<!-- Product Single -->
+<section class="product-single">
+  <div class="container">
+    <div class="product-single-grid" id="productContent">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Related Products -->
+<section class="related-products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">You May Also Like</span>
+      <h2 class="section-title">Related Products</h2>
+      <span class="divider"></span>
+    </div>
+    <div class="products-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<section class="newsletter"><div class="container text-center">
+  <span class="section-label">Join the Circle</span>
+  <h2>Get Exclusive Style Updates</h2>
+  <p>New arrivals, exclusive deals, and curated style guides straight to your inbox.</p>
+  <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+    <input type="email" placeholder="Your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div></section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo">VEL<span>V</span>ORA</a><p>Curated luxury fashion and beauty for the modern connoisseur.</p></div>
+      <div class="footer-col"><h4>Shop</h4><ul><li><a href="womens-fashion.html">Women's Fashion</a></li><li><a href="mens-fashion.html">Men's Fashion</a></li><li><a href="beauty-skincare.html">Beauty & Skincare</a></li></ul></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="blog.html">Style Journal</a></li><li><a href="search.html">All Products</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About VELVORA</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Affiliate Disclosure</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-disclaimer"><strong style="color:rgba(255,255,255,0.4)">Affiliate Disclosure:</strong> VELVORA participates in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.</p>
+      <div class="footer-bottom-right"><p>© 2025 VELVORA. All rights reserved.</p></div>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="posts.js"></script>
+<script src="search.js"></script>
+<script>
+const productId = Search.getParam('id');
+const product = getProductById(productId);
+
+const catNames = {
+  'womens-fashion': "Women's Fashion",
+  'mens-fashion': "Men's Fashion",
+  'beauty-skincare': "Beauty & Skincare"
+};
+const catLinks = {
+  'womens-fashion': 'womens-fashion.html',
+  'mens-fashion': 'mens-fashion.html',
+  'beauty-skincare': 'beauty-skincare.html'
+};
+
+if (!product) {
+  document.getElementById('productContent').innerHTML = `
+    <div style="text-align:center;padding:60px 0;grid-column:1/-1">
+      <h2>Product not found</h2>
+      <p style="color:var(--text-muted);margin-bottom:24px">This product may have been removed or the link is invalid.</p>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  `;
+} else {
+  // Update meta tags
+  document.getElementById('metaTitle').textContent = product.metaTitle;
+  document.getElementById('metaDesc').content = product.metaDesc;
+  document.getElementById('ogTitle').content = product.metaTitle;
+  document.getElementById('ogDesc').content = product.metaDesc;
+  document.getElementById('ogImage').content = product.image;
+  document.getElementById('ogUrl').content = window.location.href;
+
+  // Breadcrumb
+  const catName = catNames[product.category] || 'Products';
+  const catLink = catLinks[product.category] || 'index.html';
+  document.getElementById('breadCatLink').innerHTML = ` › <a href="${catLink}" style="color:var(--rose-gold)">${catName}</a>`;
+  document.getElementById('breadProductName').textContent = ` › ${product.name}`;
+
+  // Schema.org Product
+  document.getElementById('schemaProduct').textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": product.image,
+    "description": product.description,
+    "brand": { "@type": "Brand", "name": "VELVORA Picks" },
+    "offers": {
+      "@type": "Offer",
+      "url": product.affiliateLink,
+      "priceCurrency": "USD",
+      "price": product.price,
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.rating,
+      "reviewCount": product.reviews
+    }
+  });
+
+  const discount = product.originalPrice
+    ? Math.round((1 - product.price / product.originalPrice) * 100) : null;
+
+  const pinterestUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}&media=${encodeURIComponent(product.image)}&description=${encodeURIComponent(product.name + ' — ' + product.shortDesc + ' | VELVORA')}`;
+
+  document.getElementById('productContent').innerHTML = `
+    <div class="product-single-image">
+      <img src="${product.image}" alt="${product.name}">
+    </div>
+    <div class="product-single-info">
+      <span class="product-category-tag">${product.subcategory}</span>
+      <h1>${product.name}</h1>
+      <div class="product-single-rating">
+        ${buildStars(product.rating)}
+        <span style="font-size:0.85rem;color:var(--text-muted);margin-left:6px">${product.rating} (${product.reviews.toLocaleString()} reviews)</span>
+      </div>
+      ${product.badge ? `<span class="product-badge" style="position:relative;top:auto;left:auto;display:inline-block;margin-bottom:16px">${product.badge}</span>` : ''}
+      <div style="margin-bottom:4px">
+        <span class="product-single-price">$${product.price.toFixed(2)}</span>
+        ${product.originalPrice ? `<span class="product-single-original" style="margin-left:12px">$${product.originalPrice.toFixed(2)}</span>` : ''}
+        ${discount ? `<span class="product-discount" style="position:relative;top:auto;right:auto;display:inline-block;margin-left:12px">Save ${discount}%</span>` : ''}
+      </div>
+      <p class="product-single-desc">${product.description}</p>
+      <div class="product-single-actions">
+        <a href="${product.affiliateLink}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" style="padding:16px;font-size:0.88rem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Buy on Amazon
+        </a>
+        <a href="${pinterestUrl}" target="_blank" rel="noopener" class="btn-pinterest">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Save to Pinterest
+        </a>
+      </div>
+      <div class="product-tags">
+        ${(product.tags || []).map(t => `<span class="product-tag">#${t}</span>`).join('')}
+      </div>
+      <div style="margin-top:24px;padding:16px;background:var(--cream);border-radius:var(--radius);font-size:0.78rem;color:var(--text-muted);border-left:3px solid var(--rose-gold)">
+        <strong style="color:var(--black)">Affiliate Notice:</strong> This product link takes you to Amazon. VELVORA earns a commission on purchases at no extra cost to you.
+      </div>
+    </div>
+  `;
+
+  // Related products
+  const related = getRelatedProducts(productId, 3);
+  document.getElementById('relatedGrid').innerHTML =
+    related.length ? related.map(p => buildProductCard(p)).join('') :
+    '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center">No related products found.</p>';
+}
+
+function handleNewsletter(e) {
+  e.preventDefault();
+  const t = document.createElement('div'); t.className='toast'; t.textContent='✓ Subscribed! Welcome to VELVORA.';
+  document.body.appendChild(t); setTimeout(()=>t.remove(),3500); e.target.reset();
+}
+</script>
+</body>
+</html>
