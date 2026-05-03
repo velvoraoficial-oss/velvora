@@ -22,7 +22,7 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap location - very important for SEO
-Sitemap: https://velvora.github.io/sitemap.xml
+Sitemap:  https://velvoraoficial-oss.github.io/velvora/sitemap.xml
 
 # Crawl delay (optional - remove if causes issues)
 Crawl-delay: 1
