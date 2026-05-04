@@ -27,32 +27,31 @@
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--black);line-height:1.7}
     /* NAVBAR */
-    .navbar{background:var(--beige);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
-    .navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
-    .nav-logo{text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1;transition:opacity .3s}
-    .nav-logo:hover{opacity:.8}
-    .nav-logo .logo-v-circle{height:52px;width:52px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:2px solid rgba(183,110,121,.4);overflow:hidden;box-shadow:0 2px 8px rgba(183,110,121,.2)}
-    .nav-logo .logo-v-circle img{height:44px;width:44px;object-fit:contain}
-    .nav-logo .logo-name{display:flex;flex-direction:column;gap:2px}
-    .nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;text-transform:uppercase}
-    .nav-logo .logo-black{color:var(--black)}
-    .nav-logo .logo-rose{color:var(--rose-gold)}
-    .nav-logo .logo-tagline{color:var(--rose-gold);font-size:.5rem;letter-spacing:4px;font-family:'Lato',sans-serif;font-weight:600;text-transform:uppercase;opacity:.8}
-    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
-    .nav-links a{color:var(--black);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
-    .nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
-    .nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.4)}
-    .nav-search input{background:none;border:none;color:var(--black);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
-    .nav-search input::placeholder{color:rgba(0,0,0,.4)}
-    .nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
-    .hamburger{display:none;color:var(--black);font-size:1.5rem;cursor:pointer}
-    .mobile-menu{display:none;flex-direction:column;background:var(--beige);padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
-    .mobile-menu.open{display:flex}
-    .mobile-menu a{color:var(--black);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /* HERO */
-    .hero{min-height:90vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/banner.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:60px 5%}
+    .hero{min-height:90vh;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('images/banner.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:60px 5%}
     .hero::before{display:none}
-    .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23B76E79' fill-opacity='0.04'%3E%3Cpath d='M40 20L50 35H30L40 20zM20 50L30 65H10L20 50zM60 50L70 65H50L60 50z'/%3E%3C/g%3E%3C/svg%3E");opacity:.5}
     .hero-content{position:relative;z-index:1;max-width:800px}
     .hero-tag{display:inline-block;background:rgba(183,110,121,.2);border:1px solid rgba(183,110,121,.4);color:var(--rose-gold-light);font-size:.7rem;letter-spacing:4px;text-transform:uppercase;padding:7px 22px;border-radius:20px;margin-bottom:25px}
     .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,7vw,5rem);color:var(--white);margin-bottom:20px;line-height:1.15}
@@ -156,28 +155,43 @@
     .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;text-align:center;font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.8}
     /* RESPONSIVE */
     @media(max-width:1024px){.cats-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.stats-bar{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:768px){.nav-links,.nav-search{display:none}.hamburger{display:block}.cats-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.footer-grid{grid-template-columns:1fr}.newsletter-form{flex-direction:column}.stats-bar{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){.nav-links,.cats-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.footer-grid{grid-template-columns:1fr}.newsletter-form{flex-direction:column}.stats-bar{grid-template-columns:1fr 1fr}}
     @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
     .product-card{animation:fadeInUp .5s ease forwards}
-  </style>
+      /* ===== NAVBAR ===== */
+    .navbar{background:#F5F0EB;padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:75px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
+    .navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
+    .nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1;transition:opacity .3s}
+    .nav-logo:hover{opacity:.8}
+    .nav-logo .logo-v-img{height:38px;width:auto;object-fit:contain;display:block}
+    .nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;text-transform:uppercase;margin-top:2px}
+    .nav-logo .logo-black{color:#1a1a1a}
+    .nav-logo .logo-rose{color:#B76E79}
+    .nav-logo .logo-tagline{color:#B76E79;font-size:.45rem;letter-spacing:3px;font-family:'Lato',sans-serif;font-weight:700;text-transform:uppercase;white-space:nowrap;margin-top:1px}
+    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
+    .nav-links a{color:#1a1a1a;text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
+    .nav-links a:hover,.nav-links a.active{color:#B76E79}
+    .nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.35)}
+    .nav-search input{background:none;border:none;color:#1a1a1a;outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
+    .nav-search input::placeholder{color:rgba(0,0,0,.4)}
+    .nav-search button{background:none;border:none;color:#B76E79;cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
+    .hamburger{display:none;color:#1a1a1a;font-size:1.5rem;cursor:pointer;background:none;border:none}
+    .mobile-menu{display:none;flex-direction:column;background:#F5F0EB;padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{color:#1a1a1a;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
+    </style>
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <a href="index.html" class="nav-logo">
-    <div class="logo-v-circle">
-      <img src="images/v-symbol.png" alt="V">
-    </div>
-    <div class="logo-name">
-      <div class="logo-text">
-        <span class="logo-black">VELVO</span><span class="logo-rose">RA</span>
-      </div>
-      <span class="logo-tagline">Style That Speaks</span>
-    </div>
+    <img src="images/v-symbol.png" alt="V" class="logo-v-img">
+    <div class="logo-text"><span class="logo-black">VELVO</span><span class="logo-rose">RA</span></div>
+    <span class="logo-tagline">Style That Speaks</span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="womens-fashion.html">Women</a></li>
     <li><a href="mens-fashion.html">Men</a></li>
     <li><a href="beauty-skincare.html">Beauty</a></li>
