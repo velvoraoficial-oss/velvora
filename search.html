@@ -13,20 +13,20 @@
     :root{--rose-gold:#B76E79;--rose-gold-light:#D4A0A8;--rose-gold-dark:#8B4E58;--black:#1a1a1a;--dark-gray:#2d2d2d;--medium-gray:#666;--light-gray:#f0f0f0;--beige:#F5F0EB;--cream:#FAF7F4;--white:#fff}
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--black);line-height:1.7}
-    .navbar{background:var(--black);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(0,0,0,.3)}
-    .nav-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);text-decoration:none;letter-spacing:3px;font-weight:700;line-height:1}
-    .nav-logo span{color:var(--white);font-size:.55rem;letter-spacing:4px;display:block;text-align:center;font-family:'Lato',sans-serif;font-weight:300}
-    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
-    .nav-links a{color:var(--white);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s}
-    .nav-links a:hover{color:var(--rose-gold)}
-    .nav-search{display:flex;align-items:center;background:rgba(255,255,255,.08);border-radius:25px;padding:6px 15px;border:1px solid rgba(183,110,121,.3)}
-    .nav-search input{background:none;border:none;color:var(--white);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
-    .nav-search input::placeholder{color:rgba(255,255,255,.45)}
-    .nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
-    .hamburger{display:none;color:var(--white);font-size:1.5rem;cursor:pointer}
-    .mobile-menu{display:none;flex-direction:column;background:var(--dark-gray);padding:20px 5%}
-    .mobile-menu.open{display:flex}
-    .mobile-menu a{color:var(--white);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.9rem}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /* SEARCH HERO */
     .search-hero{background:var(--black);padding:50px 5%;text-align:center}
     .search-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--white);margin-bottom:25px}
@@ -95,13 +95,38 @@
     .footer-links{display:flex;justify-content:center;gap:30px;margin-bottom:20px;flex-wrap:wrap}
     .footer-links a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.82rem;transition:color .3s}
     .footer-links a:hover{color:var(--rose-gold)}
-    @media(max-width:768px){.nav-links,.nav-search{display:none}.hamburger{display:block}.search-filters{flex-direction:column;align-items:flex-start}.result-info{margin-left:0}}
-  </style>
+    @media(max-width:768px){.nav-links,.search-filters{flex-direction:column;align-items:flex-start}.result-info{margin-left:0}}
+      /* ===== NAVBAR ===== */
+    .navbar{background:#F5F0EB;padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:75px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
+    .navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
+    .nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1;transition:opacity .3s}
+    .nav-logo:hover{opacity:.8}
+    .nav-logo .logo-v-img{height:38px;width:auto;object-fit:contain;display:block}
+    .nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;text-transform:uppercase}
+    .nav-logo .logo-black{color:#1a1a1a}
+    .nav-logo .logo-rose{color:#B76E79}
+    .nav-logo .logo-tagline{color:#B76E79;font-size:.45rem;letter-spacing:3px;font-family:'Lato',sans-serif;font-weight:700;text-transform:uppercase;white-space:nowrap;margin-top:1px}
+    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
+    .nav-links a{color:#1a1a1a;text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
+    .nav-links a:hover,.nav-links a.active{color:#B76E79}
+    .nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.35)}
+    .nav-search input{background:none;border:none;color:#1a1a1a;outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
+    .nav-search input::placeholder{color:rgba(0,0,0,.4)}
+    .nav-search button{background:none;border:none;color:#B76E79;cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
+    .hamburger{display:none;color:#1a1a1a;font-size:1.5rem;cursor:pointer;background:none;border:none}
+    .mobile-menu{display:none;flex-direction:column;background:#F5F0EB;padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{color:#1a1a1a;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
+    </style>
 </head>
 <body>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-logo">VELVORA<span>Style That Speaks</span></a>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/v-symbol.png" alt="V" class="logo-v-img">
+    <div class="logo-text"><span class="logo-black">VELVO</span><span class="logo-rose">RA</span></div>
+    <span class="logo-tagline">Style That Speaks</span>
+  </a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="womens-fashion.html">Women</a></li>
