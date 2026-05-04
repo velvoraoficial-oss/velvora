@@ -1,323 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VELVORA - Style That Speaks | Fashion & Beauty</title>
-  <meta name="description" content="VELVORA - Your premium destination for women's fashion, men's style and beauty essentials. Curated picks, honest reviews, and top Amazon finds.">
-  <meta name="keywords" content="womens fashion, mens fashion, beauty skincare, amazon fashion, outfit ideas, style tips, VELVORA">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://velvora.github.io/">
-  <!-- Open Graph -->
-  <meta property="og:title" content="VELVORA - Style That Speaks">
-  <meta property="og:description" content="Premium fashion and beauty destination. Shop curated looks for every occasion.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://velvora.github.io/">
-  <meta property="og:image" content="https://velvora.github.io/images/banner.jpg">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"VELVORA","url":"https://velvora.github.io","description":"Premium fashion and beauty affiliate destination","potentialAction":{"@type":"SearchAction","target":"https://velvora.github.io/search.html?q={search_term_string}","query-input":"required name=search_term_string"}}
-  </script>
-  <style>
-    :root{--rose-gold:#B76E79;--rose-gold-light:#D4A0A8;--rose-gold-dark:#8B4E58;--black:#1a1a1a;--dark-gray:#2d2d2d;--medium-gray:#666;--light-gray:#f0f0f0;--beige:#F5F0EB;--cream:#FAF7F4;--white:#fff;--gold:#C9A96E}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--black);line-height:1.7}
-    /* NAVBAR */
-    .navbar{background:var(--beige);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
-    .navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
-    .nav-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);text-decoration:none;letter-spacing:3px;font-weight:700;line-height:1}
-    .nav-logo span{color:var(--black);font-size:.55rem;letter-spacing:4px;display:block;text-align:center;font-family:'Lato',sans-serif;font-weight:300;opacity:.5}
-    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
-    .nav-links a{color:var(--black);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
-    .nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
-    .nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.4)}
-    .nav-search input{background:none;border:none;color:var(--black);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
-    .nav-search input::placeholder{color:rgba(0,0,0,.4)}
-    .nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
-    .hamburger{display:none;color:var(--black);font-size:1.5rem;cursor:pointer}
-    .mobile-menu{display:none;flex-direction:column;background:var(--beige);padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
-    .mobile-menu.open{display:flex}
-    .mobile-menu a{color:var(--black);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
-    /* HERO */
-    .hero{min-height:90vh;background:linear-gradient(135deg,var(--black) 0%,#2a1518 50%,#1a1a2e 100%);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:60px 5%}
-    .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23B76E79' fill-opacity='0.04'%3E%3Cpath d='M40 20L50 35H30L40 20zM20 50L30 65H10L20 50zM60 50L70 65H50L60 50z'/%3E%3C/g%3E%3C/svg%3E");opacity:.5}
-    .hero-content{position:relative;z-index:1;max-width:800px}
-    .hero-tag{display:inline-block;background:rgba(183,110,121,.2);border:1px solid rgba(183,110,121,.4);color:var(--rose-gold-light);font-size:.7rem;letter-spacing:4px;text-transform:uppercase;padding:7px 22px;border-radius:20px;margin-bottom:25px}
-    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,7vw,5rem);color:var(--white);margin-bottom:20px;line-height:1.15}
-    .hero h1 span{color:var(--rose-gold);font-style:italic}
-    .hero p{color:rgba(255,255,255,.65);font-size:1.05rem;max-width:520px;margin:0 auto 35px;font-weight:300}
-    .hero-buttons{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
-    .btn-primary{background:var(--rose-gold);color:var(--white);padding:14px 35px;border-radius:30px;text-decoration:none;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
-    .btn-primary:hover{background:var(--rose-gold-dark);transform:translateY(-2px);box-shadow:0 10px 30px rgba(183,110,121,.4)}
-    .btn-secondary{background:transparent;color:var(--white);padding:14px 35px;border-radius:30px;text-decoration:none;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;border:1.5px solid rgba(255,255,255,.3);transition:all .3s}
-    .btn-secondary:hover{border-color:var(--rose-gold);color:var(--rose-gold)}
-    /* SEARCH BAR */
-    .home-search{background:var(--white);padding:30px 5%;border-bottom:1px solid rgba(183,110,121,.1);box-shadow:0 4px 20px rgba(0,0,0,.05)}
-    .search-inner{max-width:700px;margin:0 auto}
-    .search-inner p{text-align:center;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--medium-gray);margin-bottom:12px}
-    .search-bar{display:flex;background:var(--beige);border:2px solid transparent;border-radius:50px;overflow:hidden;transition:border-color .3s}
-    .search-bar:focus-within{border-color:var(--rose-gold)}
-    .search-bar input{flex:1;padding:14px 25px;border:none;background:none;font-size:.95rem;outline:none;font-family:'Lato',sans-serif;color:var(--black)}
-    .search-bar button{background:var(--rose-gold);color:var(--white);border:none;padding:14px 30px;cursor:pointer;font-size:.85rem;font-family:'Lato',sans-serif;letter-spacing:1px;text-transform:uppercase;font-weight:700;transition:background .3s}
-    .search-bar button:hover{background:var(--rose-gold-dark)}
-    /* CATEGORIES */
-    .categories{padding:70px 5%;text-align:center;background:var(--beige)}
-    .section-tag{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--rose-gold);font-weight:700;margin-bottom:12px;display:block}
-    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--black);margin-bottom:12px}
-    .section-subtitle{color:var(--medium-gray);font-size:.95rem;max-width:500px;margin:0 auto 50px;font-weight:300}
-    .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1200px;margin:0 auto}
-    .cat-card{border-radius:16px;overflow:hidden;position:relative;height:320px;text-decoration:none;display:block;transition:transform .3s,box-shadow .3s}
-    .cat-card:hover{transform:translateY(-8px);box-shadow:0 25px 60px rgba(0,0,0,.2)}
-    .cat-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6rem}
-    .cat-card:nth-child(1) .cat-bg{background:linear-gradient(135deg,#8B4E58,#D4A0A8)}
-    .cat-card:nth-child(2) .cat-bg{background:linear-gradient(135deg,var(--dark-gray),#4a4a4a)}
-    .cat-card:nth-child(3) .cat-bg{background:linear-gradient(135deg,#7B5E6A,#C9A96E)}
-    .cat-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-    .cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:25px}
-    .cat-tag{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--rose-gold-light);margin-bottom:6px;font-weight:700}
-    .cat-name{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--white);margin-bottom:10px}
-    .cat-arrow{width:36px;height:36px;background:var(--rose-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:.85rem;transition:transform .3s}
-    .cat-card:hover .cat-arrow{transform:translateX(5px)}
-    /* FEATURED PRODUCTS */
-    .featured-section{padding:70px 5%;background:var(--cream)}
-    .section-header{text-align:center;margin-bottom:50px}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px;max-width:1300px;margin:0 auto}
-    /* Product Card */
-    .product-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .3s}
-    .product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(183,110,121,.15)}
-    .product-image-wrap{position:relative;height:260px;overflow:hidden;background:var(--beige)}
-    .product-image-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-    .product-card:hover .product-image-wrap img{transform:scale(1.05)}
-    .product-badge{position:absolute;top:12px;left:12px;background:var(--rose-gold);color:var(--white);padding:4px 12px;border-radius:12px;font-size:.65rem;letter-spacing:1px;text-transform:uppercase;font-weight:700;z-index:2}
-    .product-discount{position:absolute;top:12px;right:12px;background:var(--black);color:var(--white);padding:4px 10px;border-radius:12px;font-size:.65rem;font-weight:700;z-index:2}
-    .product-overlay{position:absolute;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
-    .product-card:hover .product-overlay{opacity:1}
-    .btn-quick-view{background:var(--white);color:var(--black);padding:10px 22px;border-radius:25px;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all .3s}
-    .btn-quick-view:hover{background:var(--rose-gold);color:var(--white)}
-    .product-info{padding:18px}
-    .product-category-tag{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose-gold);font-weight:700}
-    .product-name{font-family:'Playfair Display',serif;font-size:1rem;margin:6px 0 6px;line-height:1.35}
-    .product-name a{color:var(--black);text-decoration:none;transition:color .3s}
-    .product-name a:hover{color:var(--rose-gold)}
-    .product-short-desc{font-size:.82rem;color:var(--medium-gray);margin-bottom:10px;line-height:1.5}
-    .product-rating{display:flex;align-items:center;gap:4px;margin-bottom:10px}
-    .star{width:14px;height:14px}
-    .star.filled path{fill:#C9A96E}
-    .star.half path{fill:#C9A96E;opacity:.6}
-    .star.empty path{fill:#ddd}
-    .rating-count{font-size:.75rem;color:var(--medium-gray)}
-    .product-price-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-    .product-price{font-size:1.1rem;font-weight:700;color:var(--black)}
-    .product-original-price{font-size:.85rem;color:var(--medium-gray);text-decoration:line-through}
-    .btn-buy{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--black);color:var(--white);padding:11px;border-radius:8px;text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all .3s;width:100%}
-    .btn-buy:hover{background:var(--rose-gold)}
-    .btn-buy svg{width:16px;height:16px}
-    /* STATS BAR */
-    .stats-bar{background:var(--black);padding:40px 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
-    .stat-item{}
-    .stat-number{font-family:'Playfair Display',serif;font-size:2rem;color:var(--rose-gold);font-weight:700}
-    .stat-label{color:rgba(255,255,255,.6);font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-top:4px}
-    /* NEWSLETTER */
-    .newsletter{padding:70px 5%;background:linear-gradient(135deg,var(--black),var(--dark-gray));text-align:center}
-    .newsletter-inner{max-width:550px;margin:0 auto}
-    .newsletter h2{font-family:'Playfair Display',serif;font-size:2rem;color:var(--white);margin-bottom:12px}
-    .newsletter p{color:rgba(255,255,255,.65);margin-bottom:30px;font-weight:300}
-    .newsletter-form{display:flex;gap:10px;max-width:450px;margin:0 auto}
-    .newsletter-form input{flex:1;padding:13px 20px;border:1px solid rgba(183,110,121,.3);border-radius:30px;background:rgba(255,255,255,.08);color:var(--white);font-family:'Lato',sans-serif;font-size:.9rem;outline:none}
-    .newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
-    .newsletter-form input:focus{border-color:var(--rose-gold)}
-    .newsletter-form button{background:var(--rose-gold);color:var(--white);border:none;padding:13px 25px;border-radius:30px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:1px;transition:background .3s;white-space:nowrap}
-    .newsletter-form button:hover{background:var(--rose-gold-dark)}
-    /* FOOTER */
-    footer{background:var(--black);color:rgba(255,255,255,.7);padding:55px 5% 25px}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
-    .footer-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--rose-gold);letter-spacing:3px;margin-bottom:15px;display:block}
-    .footer-brand p{font-size:.85rem;line-height:1.7;margin-bottom:20px}
-    .footer-social{display:flex;gap:10px}
-    .footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(183,110,121,.15);display:flex;align-items:center;justify-content:center;color:var(--rose-gold);text-decoration:none;transition:all .3s;font-size:.85rem}
-    .footer-social a:hover{background:var(--rose-gold);color:var(--white)}
-    .footer-col h5{color:var(--white);font-size:.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;font-family:'Playfair Display',serif}
-    .footer-col ul{list-style:none}
-    .footer-col ul li{margin-bottom:10px}
-    .footer-col ul li a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;transition:color .3s}
-    .footer-col ul li a:hover{color:var(--rose-gold)}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;text-align:center;font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.8}
-    /* RESPONSIVE */
-    @media(max-width:1024px){.cats-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.stats-bar{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:768px){.nav-links,.nav-search{display:none}.hamburger{display:block}.cats-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.footer-grid{grid-template-columns:1fr}.newsletter-form{flex-direction:column}.stats-bar{grid-template-columns:1fr 1fr}}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-    .product-card{animation:fadeInUp .5s ease forwards}
-  </style>
-</head>
-<body>
+/* ============================================================
+   VELVORA - SHARED NAVBAR CSS
+   Copy this CSS into EVERY HTML file's <style> section
+   to make the logo and navbar consistent across all pages
+   ============================================================ */
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <a href="index.html" class="nav-logo">VELVORA<span>Style That Speaks</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="womens-fashion.html">Women</a></li>
-    <li><a href="mens-fashion.html">Men</a></li>
-    <li><a href="beauty-skincare.html">Beauty</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
-  <div class="nav-search">
-    <input type="text" id="navSearchInput" placeholder="Search..." data-search-input>
-    <button data-search-btn><i class="fas fa-search"></i></button>
-  </div>
-  <div class="hamburger" id="menuToggle"><i class="fas fa-bars"></i></div>
-</nav>
-<nav class="mobile-menu" id="mobileNav">
-  <a href="index.html">Home</a>
-  <a href="womens-fashion.html">Women's Fashion</a>
-  <a href="mens-fashion.html">Men's Fashion</a>
-  <a href="beauty-skincare.html">Beauty & Skincare</a>
-  <a href="blog.html">Blog</a>
-</nav>
+/* NAVBAR */
+.navbar{background:var(--beige);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
+.navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <span class="hero-tag">✨ Premium Fashion & Beauty</span>
-    <h1>Where <span>Style</span><br>Meets <span>Elegance</span></h1>
-    <p>Discover curated fashion and beauty picks for the modern woman and man. Style That Speaks.</p>
-    <div class="hero-buttons">
-      <a href="womens-fashion.html" class="btn-primary"><i class="fas fa-female"></i> Shop Women</a>
-      <a href="mens-fashion.html" class="btn-secondary">Shop Men</a>
-    </div>
-  </div>
-</section>
+/* LOGO */
+.nav-logo{text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1;transition:opacity .3s}
+.nav-logo:hover{opacity:.8}
+.nav-logo .logo-v-circle{height:52px;width:52px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:2px solid rgba(183,110,121,.4);overflow:hidden;box-shadow:0 2px 8px rgba(183,110,121,.2)}
+.nav-logo .logo-v-circle img{height:44px;width:44px;object-fit:contain}
+.nav-logo .logo-name{display:flex;flex-direction:column;gap:2px}
+.nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;text-transform:uppercase}
+.nav-logo .logo-black{color:var(--black)}
+.nav-logo .logo-rose{color:var(--rose-gold)}
+.nav-logo .logo-tagline{color:var(--rose-gold);font-size:.5rem;letter-spacing:4px;font-family:'Lato',sans-serif;font-weight:600;text-transform:uppercase;opacity:.8}
 
-<!-- SEARCH BAR -->
-<section class="home-search">
-  <div class="search-inner">
-    <p>Search anything</p>
-    <div class="search-bar" data-search-form>
-      <input type="text" placeholder="Search products, styles, beauty tips..." data-search-input>
-      <button data-search-btn><i class="fas fa-search"></i> Search</button>
-    </div>
-  </div>
-</section>
+/* NAV LINKS */
+.nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
+.nav-links a{color:var(--black);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
+.nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
 
-<!-- CATEGORIES -->
-<section class="categories">
-  <span class="section-tag">Shop by Category</span>
-  <h2 class="section-title">Find Your Style</h2>
-  <p class="section-subtitle">Explore our curated collections across fashion and beauty</p>
-  <div class="cats-grid">
-    <a href="womens-fashion.html" class="cat-card">
-      <div class="cat-bg">👗</div>
-      <div class="cat-overlay">
-        <span class="cat-tag">Collection</span>
-        <h3 class="cat-name">Women's Fashion</h3>
-        <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
-      </div>
-    </a>
-    <a href="mens-fashion.html" class="cat-card">
-      <div class="cat-bg">👔</div>
-      <div class="cat-overlay">
-        <span class="cat-tag">Collection</span>
-        <h3 class="cat-name">Men's Fashion</h3>
-        <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
-      </div>
-    </a>
-    <a href="beauty-skincare.html" class="cat-card">
-      <div class="cat-bg">💄</div>
-      <div class="cat-overlay">
-        <span class="cat-tag">Collection</span>
-        <h3 class="cat-name">Beauty & Skincare</h3>
-        <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
-      </div>
-    </a>
-  </div>
-</section>
+/* SEARCH */
+.nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.4)}
+.nav-search input{background:none;border:none;color:var(--black);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
+.nav-search input::placeholder{color:rgba(0,0,0,.4)}
+.nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
 
-<!-- FEATURED PRODUCTS -->
-<section class="featured-section">
-  <div class="section-header">
-    <span class="section-tag">Hand-Picked For You</span>
-    <h2 class="section-title">Featured Products</h2>
-    <p class="section-subtitle">Top-rated picks available on Amazon with fast US shipping</p>
-  </div>
-  <div class="products-grid" id="featuredGrid"></div>
-</section>
-
-<!-- STATS -->
-<section class="stats-bar">
-  <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Curated Products</div></div>
-  <div class="stat-item"><div class="stat-number">50K+</div><div class="stat-label">Happy Shoppers</div></div>
-  <div class="stat-item"><div class="stat-number">4.8★</div><div class="stat-label">Average Rating</div></div>
-  <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Amazon Verified</div></div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="newsletter">
-  <div class="newsletter-inner">
-    <span class="section-tag" style="color:var(--rose-gold-light)">Stay In The Loop</span>
-    <h2>Join The VELVORA Family</h2>
-    <p>Get weekly style inspiration, exclusive deals and new arrivals straight to your inbox</p>
-    <div class="newsletter-form">
-      <input type="email" placeholder="Your email address">
-      <button>Subscribe ✨</button>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <span class="footer-logo">VELVORA</span>
-      <p>Your ultimate destination for fashion, beauty and lifestyle inspiration. Curating the best styles for modern women and men.</p>
-      <div class="footer-social">
-        <a href="#"><i class="fab fa-pinterest"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-    <div class="footer-col"><h5>Shop</h5><ul>
-      <li><a href="womens-fashion.html">Women's Fashion</a></li>
-      <li><a href="mens-fashion.html">Men's Fashion</a></li>
-      <li><a href="beauty-skincare.html">Beauty & Skincare</a></li>
-      <li><a href="search.html">Search Products</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Explore</h5><ul>
-      <li><a href="blog.html">Style Blog</a></li>
-      <li><a href="#">Style Tips</a></li>
-      <li><a href="#">Trend Reports</a></li>
-      <li><a href="#">Beauty Guides</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Company</h5><ul>
-      <li><a href="#">About VELVORA</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Disclaimer</a></li>
-    </ul></div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 VELVORA. All rights reserved. | Style That Speaks ✨</p>
-    <p style="margin-top:8px;font-size:.72rem"><strong>Affiliate Disclaimer:</strong> VELVORA participates in the Amazon Associates Program. We earn commissions from qualifying purchases at no extra cost to you.</p>
-  </div>
-</footer>
-
-<!-- ✅ SCRIPTS LOADED AT BOTTOM - THIS FIXES THE ERRORS -->
-<script src="products.js"></script>
-<script src="posts.js"></script>
-<script src="search.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Render featured products
-    const grid = document.getElementById('featuredGrid');
-    if (grid) {
-      const featured = getFeaturedProducts();
-      grid.innerHTML = featured.map(p => buildProductCard(p)).join('');
-    }
-  });
-</script>
-</body>
-</html>
+/* HAMBURGER */
+.hamburger{display:none;color:var(--black);font-size:1.5rem;cursor:pointer}
+.mobile-menu{display:none;flex-direction:column;background:var(--beige);padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--black);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
