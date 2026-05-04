@@ -77,13 +77,10 @@
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--black);margin-bottom:12px}
     .section-subtitle{color:var(--medium-gray);font-size:.95rem;max-width:500px;margin:0 auto 50px;font-weight:300}
     .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1200px;margin:0 auto}
-    .cat-card{border-radius:16px;overflow:hidden;position:relative;height:320px;text-decoration:none;display:block;transition:transform .3s,box-shadow .3s}
-    .cat-card:hover{transform:translateY(-8px);box-shadow:0 25px 60px rgba(0,0,0,.2)}
-    .cat-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6rem}
-    .cat-card:nth-child(1) .cat-bg{background:linear-gradient(135deg,#8B4E58,#D4A0A8)}
-    .cat-card:nth-child(2) .cat-bg{background:linear-gradient(135deg,var(--dark-gray),#4a4a4a)}
-    .cat-card:nth-child(3) .cat-bg{background:linear-gradient(135deg,#7B5E6A,#C9A96E)}
-    .cat-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .cat-card{border-radius:16px;overflow:hidden;position:relative;height:380px;text-decoration:none;display:block;transition:transform .3s,box-shadow .3s}
+    .cat-card:hover{transform:translateY(-8px);box-shadow:0 25px 60px rgba(0,0,0,.3)}
+    .cat-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .4s}
+    .cat-card:hover img{transform:scale(1.05)}
     .cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:25px}
     .cat-tag{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--rose-gold-light);margin-bottom:6px;font-weight:700}
     .cat-name{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--white);margin-bottom:10px}
@@ -242,7 +239,7 @@
   <p class="section-subtitle">Explore our curated collections across fashion and beauty</p>
   <div class="cats-grid">
     <a href="womens-fashion.html" class="cat-card">
-      <div class="cat-bg">👗</div>
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Women's Fashion" loading="lazy">
       <div class="cat-overlay">
         <span class="cat-tag">Collection</span>
         <h3 class="cat-name">Women's Fashion</h3>
@@ -250,7 +247,7 @@
       </div>
     </a>
     <a href="mens-fashion.html" class="cat-card">
-      <div class="cat-bg">👔</div>
+      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&q=80" alt="Men's Fashion" loading="lazy">
       <div class="cat-overlay">
         <span class="cat-tag">Collection</span>
         <h3 class="cat-name">Men's Fashion</h3>
@@ -258,7 +255,7 @@
       </div>
     </a>
     <a href="beauty-skincare.html" class="cat-card">
-      <div class="cat-bg">💄</div>
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80" alt="Beauty & Skincare" loading="lazy">
       <div class="cat-overlay">
         <span class="cat-tag">Collection</span>
         <h3 class="cat-name">Beauty & Skincare</h3>
