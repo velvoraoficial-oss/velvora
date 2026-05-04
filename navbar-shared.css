@@ -1,0 +1,37 @@
+/* ============================================================
+   VELVORA - SHARED NAVBAR CSS
+   Copy this CSS into EVERY HTML file's <style> section
+   to make the logo and navbar consistent across all pages
+   ============================================================ */
+
+/* NAVBAR */
+.navbar{background:var(--beige);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:70px;box-shadow:0 2px 20px rgba(183,110,121,.2);transition:box-shadow .3s}
+.navbar.scrolled{box-shadow:0 4px 30px rgba(183,110,121,.3)}
+
+/* LOGO */
+.nav-logo{text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1;transition:opacity .3s}
+.nav-logo:hover{opacity:.8}
+.nav-logo .logo-v-circle{height:52px;width:52px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:2px solid rgba(183,110,121,.4);overflow:hidden;box-shadow:0 2px 8px rgba(183,110,121,.2)}
+.nav-logo .logo-v-circle img{height:44px;width:44px;object-fit:contain}
+.nav-logo .logo-name{display:flex;flex-direction:column;gap:2px}
+.nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;text-transform:uppercase}
+.nav-logo .logo-black{color:var(--black)}
+.nav-logo .logo-rose{color:var(--rose-gold)}
+.nav-logo .logo-tagline{color:var(--rose-gold);font-size:.5rem;letter-spacing:4px;font-family:'Lato',sans-serif;font-weight:600;text-transform:uppercase;opacity:.8}
+
+/* NAV LINKS */
+.nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
+.nav-links a{color:var(--black);text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
+.nav-links a:hover,.nav-links a.active{color:var(--rose-gold)}
+
+/* SEARCH */
+.nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.4)}
+.nav-search input{background:none;border:none;color:var(--black);outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
+.nav-search input::placeholder{color:rgba(0,0,0,.4)}
+.nav-search button{background:none;border:none;color:var(--rose-gold);cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
+
+/* HAMBURGER */
+.hamburger{display:none;color:var(--black);font-size:1.5rem;cursor:pointer}
+.mobile-menu{display:none;flex-direction:column;background:var(--beige);padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--black);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
