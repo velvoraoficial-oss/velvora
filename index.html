@@ -268,9 +268,9 @@
 <!-- FEATURED PRODUCTS -->
 <section class="featured-section">
   <div class="section-header">
-    <span class="section-tag">Hand-Picked For You</span>
-    <h2 class="section-title">Featured Products</h2>
-    <p class="section-subtitle">Top-rated picks available on Amazon with fast US shipping</p>
+    <span class="section-tag">🔥 Most Popular Right Now</span>
+    <h2 class="section-title">Best Sellers</h2>
+    <p class="section-subtitle">Our most loved products — tried, tested and loved by thousands</p>
   </div>
   <div class="products-grid" id="featuredGrid"></div>
 </section>
@@ -340,11 +340,14 @@
 <script src="search.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Render featured products
     const grid = document.getElementById('featuredGrid');
     if (grid) {
-      const featured = getFeaturedProducts();
-      grid.innerHTML = featured.map(p => buildProductCard(p)).join('');
+      const best = typeof getBestSellers === 'function' ? getBestSellers() : getFeaturedProducts();
+      if (best.length > 0) {
+        grid.innerHTML = best.map(p => buildProductCard(p)).join('');
+      } else {
+        grid.innerHTML = '<p style="text-align:center;color:#888;grid-column:1/-1;padding:40px 20px;font-family:Lato,sans-serif">✨ New products coming soon! Check back shortly.</p>';
+      }
     }
   });
 </script>
