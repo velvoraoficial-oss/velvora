@@ -12,57 +12,29 @@
   <meta id="ogUrl" property="og:url" content="">
   <meta name="pinterest-rich-pin" content="true">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script id="schemaProduct" type="application/ld+json"></script>
-  <style>
-    :root{--rose-gold:#B76E79;--rose-gold-light:#D4A0A8;--rose-gold-dark:#8B4E58;--black:#1a1a1a;--dark-gray:#2d2d2d;--medium-gray:#666;--beige:#F5F0EB;--cream:#FAF7F4;--white:#fff}
-    /* NAVBAR FIX */
-    .navbar{background:#F5F0EB;padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;height:75px;box-shadow:0 2px 20px rgba(183,110,121,.2)}
-    .nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1;transition:opacity .3s}
-    .nav-logo:hover{opacity:.8}
-    /* THIS IS THE KEY FIX - constrain the logo image size */
-    .nav-logo .logo-v-img{height:38px !important;width:auto !important;max-width:50px !important;object-fit:contain;display:block}
-    .nav-logo .logo-text{display:flex;align-items:baseline;letter-spacing:4px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;text-transform:uppercase;margin-top:2px}
-    .nav-logo .logo-black{color:#1a1a1a}
-    .nav-logo .logo-rose{color:#B76E79}
-    .nav-logo .logo-tagline{color:#B76E79;font-size:.45rem;letter-spacing:3px;font-family:'Lato',sans-serif;font-weight:700;text-transform:uppercase;white-space:nowrap;margin-top:1px}
-    .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
-    .nav-links a{color:#1a1a1a;text-decoration:none;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;font-weight:600}
-    .nav-links a:hover{color:#B76E79}
-    .nav-search{display:flex;align-items:center;background:rgba(183,110,121,.1);border-radius:25px;padding:6px 15px;border:1.5px solid rgba(183,110,121,.35)}
-    .nav-search input{background:none;border:none;color:#1a1a1a;outline:none;font-size:.85rem;width:160px;font-family:'Lato',sans-serif}
-    .nav-search input::placeholder{color:rgba(0,0,0,.4)}
-    .nav-search button{background:none;border:none;color:#B76E79;cursor:pointer;font-size:.9rem;padding:0 0 0 8px}
-    .hamburger{display:none;color:#1a1a1a;font-size:1.5rem;cursor:pointer;background:none;border:none}
-    .mobile-menu{display:none;flex-direction:column;background:#F5F0EB;padding:20px 5%;border-bottom:2px solid rgba(183,110,121,.2)}
-    .mobile-menu.open{display:flex}
-    .mobile-menu a{color:#1a1a1a;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(183,110,121,.15);font-size:.9rem;letter-spacing:1px;font-weight:600}
-    @media(max-width:768px){.nav-links,.nav-search{display:none}.hamburger{display:block}}
-  </style>
 </head>
 <body>
 
-<nav class="navbar" id="navbar">
-  <a href="index.html" class="nav-logo">
-    <img src="images/v-symbol.png" alt="V" class="logo-v-img">
-    <div class="logo-text"><span class="logo-black">VELVO</span><span class="logo-rose">RA</span></div>
-    <span class="logo-tagline">Style That Speaks</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="womens-fashion.html">Women</a></li>
-    <li><a href="mens-fashion.html">Men</a></li>
-    <li><a href="beauty-skincare.html">Beauty</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
-  <div class="nav-search">
-    <input type="text" id="navSearchInput" placeholder="Search..." data-search-input>
-    <button data-search-btn><i class="fas fa-search"></i></button>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">VEL<span>V</span>ORA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="womens-fashion.html">Women</a></li>
+      <li><a href="mens-fashion.html">Men</a></li>
+      <li><a href="beauty-skincare.html">Beauty</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <form class="nav-search" data-search-form>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search products..." data-search-input>
+      <button type="submit" class="nav-search-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </form>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
   </div>
-  <div class="hamburger" id="menuToggle"><i class="fas fa-bars"></i></div>
 </nav>
-<nav class="mobile-menu" id="mobileNav">
+<nav class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="womens-fashion.html">Women's Fashion</a>
   <a href="mens-fashion.html">Men's Fashion</a>
@@ -115,14 +87,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="margin-bottom:12px">
-          <img src="images/v-symbol.png" alt="V" class="logo-v-img">
-          <div class="logo-text"><span class="logo-black" style="color:white">VELVO</span><span class="logo-rose">RA</span></div>
-          <span class="logo-tagline">Style That Speaks</span>
-        </a>
-        <p>Curated luxury fashion and beauty for the modern connoisseur.</p>
-      </div>
+      <div class="footer-brand"><a href="index.html" class="nav-logo">VEL<span>V</span>ORA</a><p>Curated luxury fashion and beauty for the modern connoisseur.</p></div>
       <div class="footer-col"><h4>Shop</h4><ul><li><a href="womens-fashion.html">Women's Fashion</a></li><li><a href="mens-fashion.html">Men's Fashion</a></li><li><a href="beauty-skincare.html">Beauty & Skincare</a></li></ul></div>
       <div class="footer-col"><h4>Explore</h4><ul><li><a href="blog.html">Style Journal</a></li><li><a href="search.html">All Products</a></li></ul></div>
       <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About VELVORA</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Affiliate Disclosure</a></li></ul></div>
@@ -220,20 +185,57 @@ if (!product) {
         ${discount ? `<span class="product-discount" style="position:relative;top:auto;right:auto;display:inline-block;margin-left:12px">Save ${discount}%</span>` : ''}
       </div>
       <p class="product-single-desc">${product.description}</p>
+
+      ${product.colors && product.colors.length > 0 ? `
+      <!-- COLOR VARIANTS -->
+      <div id="colorSection" style="margin-bottom:20px">
+        <p style="font-size:.82rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#1a1a1a;margin-bottom:12px">
+          Select Color: <span id="selectedColorName" style="color:#B76E79;font-weight:700">${product.colors[0].name}</span>
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          ${product.colors.map((color, i) => `
+            <button
+              onclick="selectColor(${i})"
+              id="colorBtn${i}"
+              title="${color.name}"
+              style="
+                width:32px;height:32px;border-radius:50%;
+                background:${color.hex};
+                border: ${i === 0 ? '3px solid #B76E79' : '2px solid #ddd'};
+                cursor:pointer;
+                transition:all .2s;
+                box-shadow: ${i === 0 ? '0 0 0 2px #B76E79' : 'none'};
+              "
+            ></button>
+          `).join('')}
+        </div>
+      </div>
+      ` : ''}
+
       <div class="product-single-actions">
-        <a href="${product.affiliateLink}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy" style="padding:16px;font-size:0.88rem">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <a id="buyBtn" href="${product.colors && product.colors.length > 0 ? product.colors[0].affiliateLink : product.affiliateLink}"
+           target="_blank" rel="nofollow noopener sponsored"
+           class="btn-buy" style="padding:16px;font-size:0.88rem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
           Buy on Amazon
         </a>
-        <a href="${pinterestUrl}" target="_blank" rel="noopener" class="btn-pinterest">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        <a id="pinBtn" href="${product.colors && product.colors.length > 0 && product.colors[0].pinLink ? product.colors[0].pinLink : pinterestUrl}"
+           target="_blank" rel="noopener" class="btn-pinterest">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+          </svg>
           Save to Pinterest
         </a>
       </div>
+
       <div class="product-tags">
         ${(product.tags || []).map(t => `<span class="product-tag">#${t}</span>`).join('')}
       </div>
-      <div style="margin-top:24px;padding:16px;background:var(--cream);border-radius:var(--radius);font-size:0.78rem;color:var(--text-muted);border-left:3px solid var(--rose-gold)">
+      <div style="margin-top:24px;padding:16px;background:var(--cream);border-radius:var(--radius);font-size:0.78rem;color:var(--text-muted);border-left:3px solid #B76E79">
         <strong style="color:var(--black)">Affiliate Notice:</strong> This product link takes you to Amazon. VELVORA earns a commission on purchases at no extra cost to you.
       </div>
     </div>
@@ -250,6 +252,39 @@ function handleNewsletter(e) {
   e.preventDefault();
   const t = document.createElement('div'); t.className='toast'; t.textContent='✓ Subscribed! Welcome to VELVORA.';
   document.body.appendChild(t); setTimeout(()=>t.remove(),3500); e.target.reset();
+}
+
+// ── COLOR SELECTOR ──────────────────────────────────────────
+function selectColor(index) {
+  const product = getProductById(new URLSearchParams(window.location.search).get('id'));
+  if (!product || !product.colors) return;
+
+  const color = product.colors[index];
+
+  // Update product image
+  const img = document.querySelector('.product-single-image img');
+  if (img && color.image) img.src = color.image;
+
+  // Update buy button link
+  const buyBtn = document.getElementById('buyBtn');
+  if (buyBtn && color.affiliateLink) buyBtn.href = color.affiliateLink;
+
+  // Update pinterest button link
+  const pinBtn = document.getElementById('pinBtn');
+  if (pinBtn && color.pinLink) pinBtn.href = color.pinLink;
+
+  // Update selected color name label
+  const label = document.getElementById('selectedColorName');
+  if (label) label.textContent = color.name;
+
+  // Update swatch borders
+  product.colors.forEach((c, i) => {
+    const btn = document.getElementById('colorBtn' + i);
+    if (btn) {
+      btn.style.border = i === index ? '3px solid #B76E79' : '2px solid #ddd';
+      btn.style.boxShadow = i === index ? '0 0 0 2px #B76E79' : 'none';
+    }
+  });
 }
 </script>
 </body>
