@@ -1,16 +1,11 @@
 // ============================================================
-// VELVORA - Search Functionality
-// Handles global search across products and blog posts
+// VELVORA - Search & UI Functions
 // ============================================================
 
 const Search = {
-
-  // Normalize string for matching
   normalize(str) {
     return (str || '').toLowerCase().trim();
   },
-
-  // Search products by query string
   searchProducts(query) {
     const q = this.normalize(query);
     if (!q) return [];
@@ -23,11 +18,10 @@ const Search = {
       (p.tags || []).some(t => this.normalize(t).includes(q))
     );
   },
-
-  // Search blog posts by query string
   searchPosts(query) {
     const q = this.normalize(query);
     if (!q) return [];
+    if (typeof POSTS === 'undefined') return [];
     return POSTS.filter(p =>
       this.normalize(p.title).includes(q) ||
       this.normalize(p.excerpt).includes(q) ||
@@ -35,26 +29,18 @@ const Search = {
       (p.tags || []).some(t => this.normalize(t).includes(q))
     );
   },
-
-  // Filter products by category
   filterByCategory(products, category) {
     if (!category || category === 'all') return products;
     return products.filter(p => p.category === category);
   },
-
-  // Filter products by max price
   filterByPrice(products, maxPrice) {
     if (!maxPrice) return products;
     return products.filter(p => p.price <= parseFloat(maxPrice));
   },
-
-  // Filter products by min rating
   filterByRating(products, minRating) {
     if (!minRating) return products;
     return products.filter(p => p.rating >= parseFloat(minRating));
   },
-
-  // Sort products
   sortProducts(products, sortBy) {
     const arr = [...products];
     switch (sortBy) {
@@ -65,21 +51,15 @@ const Search = {
       default:           return arr;
     }
   },
-
-  // Get URL params
   getParam(name) {
     const params = new URLSearchParams(window.location.search);
     return params.get(name) || '';
   },
-
-  // Redirect to search page
   goToSearch(query) {
     if (query.trim()) {
       window.location.href = `search.html?q=${encodeURIComponent(query.trim())}`;
     }
   },
-
-  // Handle search form submission
   bindSearchForms() {
     document.querySelectorAll('[data-search-form]').forEach(form => {
       form.addEventListener('submit', e => {
@@ -88,13 +68,11 @@ const Search = {
         if (input) this.goToSearch(input.value);
       });
     });
-
     document.querySelectorAll('[data-search-input]').forEach(input => {
       input.addEventListener('keydown', e => {
         if (e.key === 'Enter') this.goToSearch(input.value);
       });
     });
-
     document.querySelectorAll('[data-search-btn]').forEach(btn => {
       btn.addEventListener('click', () => {
         const input = btn.closest('[data-search-form]')?.querySelector('[data-search-input]') ||
@@ -105,7 +83,41 @@ const Search = {
   }
 };
 
-// ─── Product Card HTML Builder ──────────────────────────────
+// ============================================================
+// STAR RATING — REALISTIC AMAZON STYLE
+// Uses exact decimal rating to show partial stars correctly
+// 4.3 = 4 full stars + 1 partial (30% filled) star
+// ============================================================
+function buildStars(rating) {
+  const r = parseFloat(rating) || 0;
+  let html = '<span class="stars-wrap" style="display:inline-flex;align-items:center;gap:1px">';
+
+  for (let i = 1; i <= 5; i++) {
+    const fill = Math.min(1, Math.max(0, r - (i - 1)));
+    const percent = Math.round(fill * 100);
+
+    html += `
+      <span style="position:relative;display:inline-block;width:14px;height:14px;overflow:hidden">
+        <!-- Empty star background -->
+        <svg width="14" height="14" viewBox="0 0 20 20" style="position:absolute;top:0;left:0">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" fill="#E0E0E0"/>
+        </svg>
+        <!-- Filled star clipped to exact percentage -->
+        <span style="position:absolute;top:0;left:0;width:${percent}%;overflow:hidden;display:block">
+          <svg width="14" height="14" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" fill="#FF9900"/>
+          </svg>
+        </span>
+      </span>`;
+  }
+
+  html += '</span>';
+  return html;
+}
+
+// ============================================================
+// PRODUCT CARD BUILDER
+// ============================================================
 function buildProductCard(product, linkPrefix = '') {
   const discount = product.originalPrice
     ? Math.round((1 - product.price / product.originalPrice) * 100)
@@ -133,9 +145,10 @@ function buildProductCard(product, linkPrefix = '') {
           <a href="${linkPrefix}product.html?id=${product.id}">${product.name}</a>
         </h3>
         <p class="product-short-desc">${product.shortDesc}</p>
-        <div class="product-rating">
+        <div class="product-rating" style="display:flex;align-items:center;gap:6px;margin-bottom:10px">
           ${stars}
-          <span class="rating-count">(${product.reviews.toLocaleString()})</span>
+          <span style="font-size:.78rem;color:#FF9900;font-weight:700">${product.rating}</span>
+          <span style="font-size:.75rem;color:#666">(${product.reviews.toLocaleString()} reviews)</span>
         </div>
         <div class="product-price-row">
           <span class="product-price">$${product.price.toFixed(2)}</span>
@@ -150,22 +163,9 @@ function buildProductCard(product, linkPrefix = '') {
   `;
 }
 
-// Build star rating HTML
-function buildStars(rating) {
-  let html = '';
-  for (let i = 1; i <= 5; i++) {
-    if (i <= Math.floor(rating)) {
-      html += `<svg class="star filled" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
-    } else if (i - 0.5 <= rating) {
-      html += `<svg class="star half" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
-    } else {
-      html += `<svg class="star empty" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
-    }
-  }
-  return html;
-}
-
-// Build blog post card HTML
+// ============================================================
+// BLOG POST CARD BUILDER
+// ============================================================
 function buildPostCard(post, linkPrefix = '') {
   return `
     <article class="post-card">
@@ -193,27 +193,23 @@ function buildPostCard(post, linkPrefix = '') {
   `;
 }
 
-// Format date nicely
 function formatDate(dateStr) {
   const d = new Date(dateStr);
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-// Initialize search bindings on DOM ready
+// Init on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   Search.bindSearchForms();
 
-  // Mobile menu toggle
   const menuBtn = document.getElementById('menuToggle');
   const mobileNav = document.getElementById('mobileNav');
   if (menuBtn && mobileNav) {
     menuBtn.addEventListener('click', () => {
       mobileNav.classList.toggle('open');
-      menuBtn.classList.toggle('active');
     });
   }
 
-  // Sticky nav shadow
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('.navbar');
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
