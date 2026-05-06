@@ -104,7 +104,118 @@ const PRODUCTS = [
   }
 
   // ─────────────────────────────────────────────────────────
-  // ADD MORE WOMEN'S FASHION PRODUCTS BELOW
+  // ADD MORE WOMEN'S FASHION PRODUCTS BELOW{
+    id: "yl-celtic-knot-ring",
+    name: "YL Celtic Knot Ring — 925 Sterling Silver Birthstone",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-citrine-nov.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created birthstone woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in 12 birthstone colors and sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot infinity ring — available in 12 birthstone colors",
+    affiliateLink: "https://amzn.to/48JBkFi",
+    colors: [
+      {
+        name: "Citrine (Nov)",
+        hex: "#F4A460",
+        image: "images/ring-citrine-nov.jpg",
+        affiliateLink: "https://amzn.to/48JBkFi",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Zirconia Gold (Apr)",
+        hex: "#FFD700",
+        image: "images/ring-zirconia-gold.jpg",
+        affiliateLink: "https://amzn.to/4tiHVhc",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Amethyst (Feb)",
+        hex: "#9B59B6",
+        image: "images/ring-amethyst-feb.jpg",
+        affiliateLink: "https://amzn.to/3R3H0DV",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Zirconia Rose Gold (Apr)",
+        hex: "#E0A899",
+        image: "images/ring-zirconia-rose.jpg",
+        affiliateLink: "https://amzn.to/42hO2Yg",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Emerald (May)",
+        hex: "#50C878",
+        image: "images/ring-emerald-may.jpg",
+        affiliateLink: "https://amzn.to/4tN7IPI",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Zirconia Silver (Apr)",
+        hex: "#E8E8E8",
+        image: "images/ring-zirconia-apr.jpg",
+        affiliateLink: "https://amzn.to/3QS68xx",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Alexandrite (Jun)",
+        hex: "#7851A9",
+        image: "images/ring-alexandrite-jun.jpg",
+        affiliateLink: "https://amzn.to/4epBBkm",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Ruby (Jul)",
+        hex: "#E0115F",
+        image: "images/ring-ruby-jul.jpg",
+        affiliateLink: "https://amzn.to/4d6cH6P",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Topaz (Nov)",
+        hex: "#FFBF00",
+        image: "images/ring-topaz-nov.jpg",
+        affiliateLink: "https://amzn.to/3PruaPr",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Peridot (Aug)",
+        hex: "#E6E200",
+        image: "images/ring-peridot-aug.jpg",
+        affiliateLink: "https://amzn.to/4nicORM",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Tanzanite (Dec)",
+        hex: "#4B0082",
+        image: "images/ring-tanzanite-dec.jpg",
+        affiliateLink: "https://amzn.to/4dcLAY3",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Sapphire (Sep)",
+        hex: "#0F52BA",
+        image: "images/ring-sapphire-sep.jpg",
+        affiliateLink: "https://amzn.to/4eZm8rq",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      },
+      {
+        name: "Pink Tourmaline (Oct)",
+        hex: "#FF69B4",
+        image: "images/ring-pink-oct.jpg",
+        affiliateLink: "https://amzn.to/42PANxY",
+        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
+      }
+    ],
+    tags: ["knuckle ring", "celtic ring", "silver ring", "birthstone ring", "infinity ring", "statement ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Sterling Silver Birthstone Ring | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in 12 birthstone colors at VELVORA. Available on Amazon with FREE returns."
+  },
   // ─────────────────────────────────────────────────────────
 
 
