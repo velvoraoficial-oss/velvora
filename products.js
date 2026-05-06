@@ -1,161 +1,164 @@
 // ============================================================
-// VELVORA - Search & UI Functions
+// VELVORA - Products Data File
+// ============================================================
+// MULTI-COLOR SUPPORT:
+// Each product can have multiple color variants
+// Each color has its OWN affiliate link and pin link
 // ============================================================
 
-const Search = {
-  normalize(str) { return (str||'').toLowerCase().trim(); },
-  searchProducts(query) {
-    const q=this.normalize(query); if(!q) return [];
-    return PRODUCTS.filter(p=>
-      this.normalize(p.name).includes(q)||this.normalize(p.description).includes(q)||
-      this.normalize(p.shortDesc).includes(q)||this.normalize(p.category).includes(q)||
-      this.normalize(p.subcategory).includes(q)||(p.tags||[]).some(t=>this.normalize(t).includes(q))
-    );
-  },
-  searchPosts(query) {
-    const q=this.normalize(query); if(!q) return [];
-    if(typeof POSTS==='undefined') return [];
-    return POSTS.filter(p=>
-      this.normalize(p.title).includes(q)||this.normalize(p.excerpt).includes(q)||
-      this.normalize(p.category).includes(q)||(p.tags||[]).some(t=>this.normalize(t).includes(q))
-    );
-  },
-  filterByCategory(products,category) {
-    if(!category||category==='all') return products;
-    return products.filter(p=>p.category===category);
-  },
-  filterByPrice(products,maxPrice) {
-    if(!maxPrice) return products;
-    return products.filter(p=>p.price<=parseFloat(maxPrice));
-  },
-  filterByRating(products,minRating) {
-    if(!minRating) return products;
-    return products.filter(p=>p.rating>=parseFloat(minRating));
-  },
-  sortProducts(products,sortBy) {
-    const arr=[...products];
-    switch(sortBy){
-      case 'price-asc': return arr.sort((a,b)=>a.price-b.price);
-      case 'price-desc': return arr.sort((a,b)=>b.price-a.price);
-      case 'rating': return arr.sort((a,b)=>b.rating-a.rating);
-      case 'name': return arr.sort((a,b)=>a.name.localeCompare(b.name));
-      default: return arr;
-    }
-  },
-  getParam(name) { return new URLSearchParams(window.location.search).get(name)||''; },
-  goToSearch(query) {
-    if(query.trim()) window.location.href=`search.html?q=${encodeURIComponent(query.trim())}`;
-  },
-  bindSearchForms() {
-    document.querySelectorAll('[data-search-input]').forEach(input=>{
-      input.addEventListener('keydown',e=>{ if(e.key==='Enter') this.goToSearch(input.value); });
-    });
-    document.querySelectorAll('[data-search-btn]').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        const input=document.querySelector('[data-search-input]');
-        if(input) this.goToSearch(input.value);
-      });
-    });
+const PRODUCTS = [
+
+  // ═══════════════════════════════════════════════════════════
+  // WOMEN'S FASHION
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "yl-celtic-knot-ring",
+    name: "YL Celtic Knot Ring — 925 Sterling Silver Birthstone",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    // Default image (first color)
+    image: "images/ring-aquamarine.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created birthstone woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in 12 birthstone colors and sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot infinity ring — available in 12 birthstone colors",
+    // Default affiliate link (first color)
+    affiliateLink: "https://amzn.to/4cQA7OP",
+    // ─────────────────────────────────────────────────────
+    // COLOR VARIANTS
+    // Each color has: name, image, affiliateLink, pinLink
+    // ─────────────────────────────────────────────────────
+    colors: [
+      {
+        name: "Aquamarine (Mar)",
+        hex: "#7FCDEE",
+        image: "images/ring-aquamarine.jpg",
+        affiliateLink: "https://amzn.to/4cQA7OP",
+        pinLink: "https://pinterest.com/pin/YOUR-AQUAMARINE-PIN-ID"
+      },
+      {
+        name: "Garnet (Jan)",
+        hex: "#8B1A1A",
+        image: "images/ring-garnet.jpg",
+        affiliateLink: "https://amzn.to/GARNET-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-GARNET-PIN-ID"
+      },
+      {
+        name: "Amethyst (Feb)",
+        hex: "#9B59B6",
+        image: "images/ring-amethyst.jpg",
+        affiliateLink: "https://amzn.to/AMETHYST-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-AMETHYST-PIN-ID"
+      },
+      {
+        name: "Zirconia (Apr)",
+        hex: "#E8E8E8",
+        image: "images/ring-zirconia.jpg",
+        affiliateLink: "https://amzn.to/ZIRCONIA-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-ZIRCONIA-PIN-ID"
+      },
+      {
+        name: "Emerald (May)",
+        hex: "#2ECC71",
+        image: "images/ring-emerald.jpg",
+        affiliateLink: "https://amzn.to/EMERALD-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-EMERALD-PIN-ID"
+      },
+      {
+        name: "Ruby (Jul)",
+        hex: "#C0392B",
+        image: "images/ring-ruby.jpg",
+        affiliateLink: "https://amzn.to/RUBY-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-RUBY-PIN-ID"
+      },
+      {
+        name: "Sapphire (Sep)",
+        hex: "#2980B9",
+        image: "images/ring-sapphire.jpg",
+        affiliateLink: "https://amzn.to/SAPPHIRE-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-SAPPHIRE-PIN-ID"
+      },
+      {
+        name: "Pink Tourmaline (Oct)",
+        hex: "#FF69B4",
+        image: "images/ring-pink.jpg",
+        affiliateLink: "https://amzn.to/PINK-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-PINK-PIN-ID"
+      },
+      {
+        name: "Tanzanite (Dec)",
+        hex: "#4B0082",
+        image: "images/ring-tanzanite.jpg",
+        affiliateLink: "https://amzn.to/TANZANITE-LINK",
+        pinLink: "https://pinterest.com/pin/YOUR-TANZANITE-PIN-ID"
+      }
+    ],
+    tags: ["knuckle ring", "celtic ring", "silver ring", "birthstone ring", "infinity ring", "statement ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Sterling Silver Birthstone Ring | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in 12 birthstone colors at VELVORA. Available on Amazon with FREE returns."
   }
+
+  // ─────────────────────────────────────────────────────────
+  // ADD MORE WOMEN'S FASHION PRODUCTS BELOW
+  // ─────────────────────────────────────────────────────────
+
+
+  // ═══════════════════════════════════════════════════════════
+  // MEN'S FASHION
+  // ═══════════════════════════════════════════════════════════
+
+  // ─────────────────────────────────────────────────────────
+  // ADD MEN'S FASHION PRODUCTS BELOW
+  // ─────────────────────────────────────────────────────────
+
+
+  // ═══════════════════════════════════════════════════════════
+  // BEAUTY & SKINCARE
+  // ═══════════════════════════════════════════════════════════
+
+  // ─────────────────────────────────────────────────────────
+  // ADD BEAUTY PRODUCTS BELOW
+  // ─────────────────────────────────────────────────────────
+
+];
+
+// ============================================================
+// SUBCATEGORY DEFINITIONS
+// ============================================================
+const SUBCATEGORIES = {
+  "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Knitwear","Accessories","Shoes","Bags"],
+  "mens-fashion":   ["Shirts","Blazers","Trousers","Casual","Accessories","Shoes","Jackets","Suits"],
+  "beauty-skincare":["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care"]
 };
 
 // ============================================================
-// STAR RATING — FIXED SINGLE ROW, EXACT PERCENTAGE FILL
-// Only 5 stars, no duplicates, Amazon orange style
+// HELPER FUNCTIONS
 // ============================================================
-function buildStars(rating) {
-  const r = Math.min(5, Math.max(0, parseFloat(rating)||0));
-  const starPath = "M10 1l2.39 4.84 5.34.78-3.86 3.76.91 5.32L10 13.27l-4.78 2.51.91-5.32L2.27 6.62l5.34-.78z";
-  let html = '<span style="display:inline-flex;align-items:center;gap:1px;line-height:1">';
-  for(let i=1;i<=5;i++){
-    const fill = Math.round(Math.min(1,Math.max(0,r-(i-1)))*100);
-    const uid = 'sg'+Math.random().toString(36).slice(2,7)+'_'+i;
-    html += `<svg width="13" height="13" viewBox="0 0 20 20" style="display:block;flex-shrink:0">
-      <defs>
-        <linearGradient id="${uid}" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="${fill}%" stop-color="#FF9900"/>
-          <stop offset="${fill}%" stop-color="#E0E0E0"/>
-        </linearGradient>
-      </defs>
-      <path d="${starPath}" fill="url(#${uid})" stroke="none"/>
-    </svg>`;
-  }
-  html += '</span>';
-  return html;
+function getProductsByCategory(cat) {
+  return PRODUCTS.filter(p => p.category === cat);
 }
-
-// ============================================================
-// PRODUCT CARD BUILDER
-// ============================================================
-function buildProductCard(product, linkPrefix='') {
-  const discount = product.originalPrice
-    ? Math.round((1-product.price/product.originalPrice)*100) : null;
-  const stars = buildStars(product.rating);
-  const badge = product.badge ? `<span class="product-badge">${product.badge}</span>` : '';
-  const discountTag = discount ? `<span class="product-discount">-${discount}%</span>` : '';
-
-  return `
-    <div class="product-card" data-id="${product.id}" data-category="${product.category}">
-      <div class="product-image-wrap">
-        <a href="${linkPrefix}product.html?id=${product.id}">
-          <img src="${product.image}" alt="${product.name}" loading="lazy">
-        </a>
-        ${badge}${discountTag}
-        <div class="product-overlay">
-          <a href="${linkPrefix}product.html?id=${product.id}" class="btn-quick-view">View Details</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <span class="product-category-tag">${product.subcategory}</span>
-        <h3 class="product-name">
-          <a href="${linkPrefix}product.html?id=${product.id}">${product.name}</a>
-        </h3>
-        <p class="product-short-desc">${product.shortDesc}</p>
-        <div style="display:flex;align-items:center;gap:6px;margin-bottom:10px">
-          ${stars}
-          <span style="font-size:.78rem;font-weight:700;color:#FF9900">${product.rating}</span>
-          <span style="font-size:.72rem;color:#888">(${product.reviews.toLocaleString()})</span>
-        </div>
-        <div class="product-price-row">
-          <span class="product-price">$${product.price.toFixed(2)}</span>
-          ${product.originalPrice?`<span class="product-original-price">$${product.originalPrice.toFixed(2)}</span>`:''}
-        </div>
-        <a href="${product.affiliateLink}" target="_blank" rel="nofollow noopener sponsored" class="btn-buy">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9"/></svg>
-          Buy on Amazon
-        </a>
-      </div>
-    </div>`;
+function getProductsBySubcategory(cat, subcat) {
+  return PRODUCTS.filter(p => p.category === cat && p.subcategory === subcat);
 }
-
-function buildPostCard(post,linkPrefix='') {
-  return `<article class="post-card">
-    <div class="post-image-wrap">
-      <a href="${linkPrefix}post.html?id=${post.id}">
-        <img src="${post.image}" alt="${post.title}" loading="lazy">
-      </a>
-      <span class="post-category-tag">${post.category}</span>
-    </div>
-    <div class="post-info">
-      <div class="post-meta"><span>${post.author}</span><span>•</span><span>${formatDate(post.date)}</span></div>
-      <h3 class="post-title"><a href="${linkPrefix}post.html?id=${post.id}">${post.title}</a></h3>
-      <p class="post-excerpt">${post.excerpt}</p>
-      <a href="${linkPrefix}post.html?id=${post.id}" class="btn-read-more">Read More →</a>
-    </div>
-  </article>`;
+function getFeaturedProducts() {
+  return PRODUCTS.filter(p => p.featured);
 }
-
-function formatDate(dateStr) {
-  return new Date(dateStr).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+function getBestSellers() {
+  return PRODUCTS.filter(p => p.featured).sort((a, b) => b.reviews - a.reviews);
 }
-
-document.addEventListener('DOMContentLoaded',()=>{
-  Search.bindSearchForms();
-  const menuBtn=document.getElementById('menuToggle');
-  const mobileNav=document.getElementById('mobileNav');
-  if(menuBtn&&mobileNav) menuBtn.addEventListener('click',()=>mobileNav.classList.toggle('open'));
-  window.addEventListener('scroll',()=>{
-    const nav=document.querySelector('.navbar');
-    if(nav) nav.classList.toggle('scrolled',window.scrollY>20);
-  });
-});
+function getProductById(id) {
+  return PRODUCTS.find(p => p.id === id);
+}
+function getRelatedProducts(id, limit = 3) {
+  const product = getProductById(id);
+  if (!product) return [];
+  return PRODUCTS.filter(p => p.category === product.category && p.id !== id).slice(0, limit);
+}
+function getSubcategories(cat) {
+  return SUBCATEGORIES[cat] || [];
+}
