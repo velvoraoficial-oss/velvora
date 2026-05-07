@@ -1,6 +1,6 @@
 // ============================================================
 // VELVORA - Products Data File
-// All 13 ring color variants properly configured
+// 14 Celtic Knot Ring variants — each as a separate product
 // ============================================================
 
 const PRODUCTS = [
@@ -10,8 +10,8 @@ const PRODUCTS = [
   // ═══════════════════════════════════════════════════════════
 
   {
-    id: "yl-celtic-knot-ring",
-    name: "YL Celtic Knot Ring — 925 Sterling Silver Birthstone",
+    id: "yl-celtic-knot-ring-citrine-nov",
+    name: "YL Celtic Knot Ring — Citrine (November)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -19,107 +19,288 @@ const PRODUCTS = [
     rating: 4.3,
     reviews: 721,
     image: "images/ring-citrine-nov.jpg",
-    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created birthstone woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in 13 birthstone colors and sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
-    shortDesc: "925 Sterling Silver Celtic knot infinity ring — available in 13 birthstone colors",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Citrine birthstone (November) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Citrine birthstone — November",
     affiliateLink: "https://amzn.to/48JBkFi",
-    colors: [
-      {
-        name: "Citrine (Nov)",
-        hex: "#F4A460",
-        image: "images/ring-citrine-nov.jpg",
-        affiliateLink: "https://amzn.to/48JBkFi",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Zirconia Gold (Apr)",
-        hex: "#FFD700",
-        image: "images/ring-zirconia-gold.jpg",
-        affiliateLink: "https://amzn.to/4tiHVhc",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Amethyst (Feb)",
-        hex: "#9B59B6",
-        image: "images/ring-amethyst-feb.jpg",
-        affiliateLink: "https://amzn.to/3R3H0DV",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Zirconia Rose Gold (Apr)",
-        hex: "#E0A899",
-        image: "images/ring-zirconia-rose.jpg",
-        affiliateLink: "https://amzn.to/42hO2Yg",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Emerald (May)",
-        hex: "#50C878",
-        image: "images/ring-emerald-may.jpg",
-        affiliateLink: "https://amzn.to/4tN7IPI",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Zirconia Silver (Apr)",
-        hex: "#C0C0C0",
-        image: "images/ring-zirconia-silver.jpg",
-        affiliateLink: "https://amzn.to/3QS68xx",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Alexandrite (Jun)",
-        hex: "#7851A9",
-        image: "images/ring-alexandrite-jun.jpg",
-        affiliateLink: "https://amzn.to/4epBBkm",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Ruby (Jul)",
-        hex: "#E0115F",
-        image: "images/ring-ruby-jul.jpg",
-        affiliateLink: "https://amzn.to/4d6cH6P",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Topaz (Nov)",
-        hex: "#FFBF00",
-        image: "images/ring-topaz-nov.jpg",
-        affiliateLink: "https://amzn.to/3PruaPr",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Peridot (Aug)",
-        hex: "#E6E200",
-        image: "images/ring-peridot-aug.jpg",
-        affiliateLink: "https://amzn.to/4nicORM",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Tanzanite (Dec)",
-        hex: "#4B0082",
-        image: "images/ring-tanzanite-dec.jpg",
-        affiliateLink: "https://amzn.to/4dcLAY3",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Sapphire (Sep)",
-        hex: "#0F52BA",
-        image: "images/ring-sapphire-sep.jpg",
-        affiliateLink: "https://amzn.to/4eZm8rq",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      },
-      {
-        name: "Pink Tourmaline (Oct)",
-        hex: "#FF69B4",
-        image: "images/ring-pink-oct.jpg",
-        affiliateLink: "https://amzn.to/42PANxY",
-        pinLink: "https://velvoraoficial-oss.github.io/velvora/product.html?id=yl-celtic-knot-ring"
-      }
-    ],
-    tags: ["knuckle ring", "celtic ring", "silver ring", "birthstone ring", "infinity ring", "statement ring", "925 sterling silver", "gift for her"],
+    colors: [],
+    tags: ["celtic ring", "citrine ring", "november birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
     featured: true,
     badge: "Trending 🔥",
-    metaTitle: "YL Celtic Knot Sterling Silver Birthstone Ring | VELVORA",
-    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in 13 birthstone colors at VELVORA. Available on Amazon with FREE returns."
+    metaTitle: "YL Celtic Knot Ring — Citrine November | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Citrine (November) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-zirconia-gold-apr",
+    name: "YL Celtic Knot Ring — Zirconia Gold (April)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-zirconia-gold.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Zirconia Gold birthstone (April) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Zirconia Gold birthstone — April",
+    affiliateLink: "https://amzn.to/4tiHVhc",
+    colors: [],
+    tags: ["celtic ring", "zirconia ring", "april birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Zirconia Gold April | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Zirconia Gold (April) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-amethyst-feb",
+    name: "YL Celtic Knot Ring — Amethyst (February)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-amethyst-feb.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Amethyst birthstone (February) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Amethyst birthstone — February",
+    affiliateLink: "https://amzn.to/3R3H0DV",
+    colors: [],
+    tags: ["celtic ring", "amethyst ring", "february birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Amethyst February | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Amethyst (February) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-zirconia-rose-apr",
+    name: "YL Celtic Knot Ring — Zirconia Rose Gold (April)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-zirconia-rose.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Zirconia Rose Gold birthstone (April) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Zirconia Rose Gold birthstone — April",
+    affiliateLink: "https://amzn.to/42hO2Yg",
+    colors: [],
+    tags: ["celtic ring", "rose gold ring", "april birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Zirconia Rose Gold April | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Zirconia Rose Gold (April) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-emerald-may",
+    name: "YL Celtic Knot Ring — Emerald (May)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-emerald-may.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Emerald birthstone (May) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Emerald birthstone — May",
+    affiliateLink: "https://amzn.to/4tN7IPI",
+    colors: [],
+    tags: ["celtic ring", "emerald ring", "may birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Emerald May | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Emerald (May) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-zirconia-silver-apr",
+    name: "YL Celtic Knot Ring — Zirconia Silver (April)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-zirconia-apr.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Zirconia Silver birthstone (April) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Zirconia Silver birthstone — April",
+    affiliateLink: "https://amzn.to/3QS68xx",
+    colors: [],
+    tags: ["celtic ring", "zirconia silver ring", "april birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Zirconia Silver April | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Zirconia Silver (April) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-alexandrite-jun",
+    name: "YL Celtic Knot Ring — Alexandrite (June)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-alexandrite-jun.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Alexandrite birthstone (June) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Alexandrite birthstone — June",
+    affiliateLink: "https://amzn.to/4epBBkm",
+    colors: [],
+    tags: ["celtic ring", "alexandrite ring", "june birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Alexandrite June | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Alexandrite (June) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-ruby-jul",
+    name: "YL Celtic Knot Ring — Ruby (July)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-ruby-jul.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Ruby birthstone (July) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Ruby birthstone — July",
+    affiliateLink: "https://amzn.to/4d6cH6P",
+    colors: [],
+    tags: ["celtic ring", "ruby ring", "july birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Ruby July | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Ruby (July) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-topaz-nov",
+    name: "YL Celtic Knot Ring — Topaz (November)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-topaz-nov.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Topaz birthstone (November) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Topaz birthstone — November",
+    affiliateLink: "https://amzn.to/3PruaPr",
+    colors: [],
+    tags: ["celtic ring", "topaz ring", "november birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Topaz November | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Topaz (November) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-peridot-aug",
+    name: "YL Celtic Knot Ring — Peridot (August)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-peridot-aug.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Peridot birthstone (August) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Peridot birthstone — August",
+    affiliateLink: "https://amzn.to/4nicORM",
+    colors: [],
+    tags: ["celtic ring", "peridot ring", "august birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Peridot August | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Peridot (August) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-tanzanite-dec",
+    name: "YL Celtic Knot Ring — Tanzanite (December)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-tanzanite-dec.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Tanzanite birthstone (December) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Tanzanite birthstone — December",
+    affiliateLink: "https://amzn.to/4dcLAY3",
+    colors: [],
+    tags: ["celtic ring", "tanzanite ring", "december birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Tanzanite December | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Tanzanite (December) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-sapphire-sep",
+    name: "YL Celtic Knot Ring — Sapphire (September)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-sapphire-sep.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Sapphire birthstone (September) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Sapphire birthstone — September",
+    affiliateLink: "https://amzn.to/4eZm8rq",
+    colors: [],
+    tags: ["celtic ring", "sapphire ring", "september birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Sapphire September | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Sapphire (September) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-pink-tourmaline-oct",
+    name: "YL Celtic Knot Ring — Pink Tourmaline (October)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-pink-oct.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Pink Tourmaline birthstone (October) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Pink Tourmaline birthstone — October",
+    affiliateLink: "https://amzn.to/42PANxY",
+    colors: [],
+    tags: ["celtic ring", "pink tourmaline ring", "october birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "Trending 🔥",
+    metaTitle: "YL Celtic Knot Ring — Pink Tourmaline October | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Pink Tourmaline (October) at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yl-celtic-knot-ring-aquamarine-mar",
+    name: "YL Celtic Knot Ring — Aquamarine (March)",
+    category: "womens-fashion",
+    subcategory: "Rings",
+    price: 65.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviews: 721,
+    image: "images/ring-aquamarine.jpg",
+    description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Aquamarine birthstone (March) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
+    shortDesc: "925 Sterling Silver Celtic knot ring with Aquamarine birthstone — March",
+    affiliateLink: "https://amzn.to/48JBkFi",
+    colors: [],
+    tags: ["celtic ring", "aquamarine ring", "march birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "YL Celtic Knot Ring — Aquamarine March | VELVORA",
+    metaDesc: "Shop the YL Celtic Knot 925 Sterling Silver Ring in Aquamarine (March) at VELVORA. Available on Amazon with FREE returns."
   }
 
   // ─────────────────────────────────────────────────────────
@@ -171,46 +352,29 @@ function getBestSellers() {
 function getProductById(id) {
   return PRODUCTS.find(p => p.id === id);
 }
-function getRelatedProducts(id, limit = 3) {
+
+// Related products = same subcategory, excluding self
+// All 13 other ring variants show as related products
+function getRelatedProducts(id, limit = 6) {
   const product = getProductById(id);
   if (!product) return [];
-  return PRODUCTS.filter(p => p.category === product.category && p.id !== id).slice(0, limit);
+  return PRODUCTS.filter(p => p.subcategory === product.subcategory && p.id !== id).slice(0, limit);
 }
+
 function getSubcategories(cat) {
   return SUBCATEGORIES[cat] || [];
 }
 
 // ============================================================
-// EXPANDED: Show each color variant as separate product card
-// For homepage/category pages
+// EXPANDED functions — since each product is now standalone,
+// these simply return PRODUCTS directly (no expansion needed)
 // ============================================================
 function getAllProductsExpanded() {
-  const expanded = [];
-  PRODUCTS.forEach(product => {
-    if (product.colors && product.colors.length > 0) {
-      product.colors.forEach(color => {
-        expanded.push({
-          ...product,
-          id: product.id + '-' + color.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-          name: product.name + ' — ' + color.name,
-          image: color.image,
-          affiliateLink: color.affiliateLink,
-          shortDesc: product.shortDesc + ' in ' + color.name,
-          _isColorVariant: true,
-          _parentId: product.id
-        });
-      });
-    } else {
-      expanded.push(product);
-    }
-  });
-  return expanded;
+  return PRODUCTS;
 }
-
 function getFeaturedProductsExpanded() {
-  return getAllProductsExpanded().filter(p => p.featured);
+  return PRODUCTS.filter(p => p.featured);
 }
-
 function getBestSellersExpanded() {
-  return getAllProductsExpanded().filter(p => p.featured).sort((a, b) => b.reviews - a.reviews);
+  return PRODUCTS.filter(p => p.featured).sort((a, b) => b.reviews - a.reviews);
 }
