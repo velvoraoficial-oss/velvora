@@ -116,7 +116,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-zirconia-silver-apr",
-    name: "YL Celtic Knot Ring — Zirconia Silver (April)",
+    name: "Zirconia Silver (Apr)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -242,7 +242,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-sapphire-sep",
-    name: "YL Celtic Knot Ring — Sapphire (September)",
+    name: "YL Celtic Knot Ring — Sapphire (Sep)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -284,7 +284,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-aquamarine-mar",
-    name: "YL Celtic Knot Ring — Aquamarine (March)",
+    name: "YL Celtic Knot Ring — Aquamarine (Mar)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
