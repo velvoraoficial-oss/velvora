@@ -3,7 +3,7 @@
 // To add a new post: copy any post object and edit the fields
 // ============================================================
 
-const POSTS = [
+var POSTS = [
   {
     id: "timeless-wardrobe-essentials",
     title: "10 Timeless Wardrobe Essentials Every Woman Needs in 2025",
