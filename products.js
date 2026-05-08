@@ -116,7 +116,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-zirconia-silver-apr",
-    name: "Zirconia Silver (Apr)",
+    name: "YL Celtic Knot Ring — Zirconia Silver (April)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -242,7 +242,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-sapphire-sep",
-    name: "YL Celtic Knot Ring — Sapphire (Sep)",
+    name: "YL Celtic Knot Ring — Sapphire (September)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -284,7 +284,7 @@ const PRODUCTS = [
 
   {
     id: "yl-celtic-knot-ring-aquamarine-mar",
-    name: "YL Celtic Knot Ring — Aquamarine (Mar)",
+    name: "YL Celtic Knot Ring — Aquamarine (March)",
     category: "womens-fashion",
     subcategory: "Rings",
     price: 65.99,
@@ -294,7 +294,7 @@ const PRODUCTS = [
     image: "images/ring-aquamarine.jpg",
     description: "This stunning YL Celtic Knot Ring is crafted from 925 sterling silver with rhodium plating for lasting brilliance. Features a round-cut created Aquamarine birthstone (March) woven in an elegant braided infinity design. Symbolizes infinite vitality and eternal connection. Available in sizes 5-10. Comes in a beautiful YL jewelry box — perfect for gifting. Hypoallergenic and safe for daily wear.",
     shortDesc: "925 Sterling Silver Celtic knot ring with Aquamarine birthstone — March",
-    affiliateLink: "https://amzn.to/48JBkFi",
+    affiliateLink: "https://amzn.to/4trfz4u",
     colors: [],
     tags: ["celtic ring", "aquamarine ring", "march birthstone", "silver ring", "birthstone ring", "infinity ring", "925 sterling silver", "gift for her"],
     featured: true,
