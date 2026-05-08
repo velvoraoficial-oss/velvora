@@ -3,7 +3,7 @@
 // 14 Celtic Knot Ring variants — each as a separate product
 // ============================================================
 
-const PRODUCTS = [
+var PRODUCTS = [
 
   // ═══════════════════════════════════════════════════════════
   // WOMEN'S FASHION — RINGS
@@ -328,7 +328,7 @@ const PRODUCTS = [
 // ============================================================
 // SUBCATEGORY DEFINITIONS
 // ============================================================
-const SUBCATEGORIES = {
+var SUBCATEGORIES = {
   "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Knitwear","Accessories","Shoes","Bags"],
   "mens-fashion": ["Shirts","Blazers","Trousers","Casual","Accessories","Shoes","Jackets","Suits"],
   "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care"]
