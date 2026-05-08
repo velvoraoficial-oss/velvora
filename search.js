@@ -2,7 +2,7 @@
 // VELVORA - Search & UI Functions
 // ============================================================
 
-const Search = {
+var Search = {
   normalize(str) { return (str||'').toLowerCase().trim(); },
   searchProducts(query) {
     const q=this.normalize(query); if(!q) return [];
