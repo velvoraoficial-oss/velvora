@@ -3,7 +3,7 @@
 // 14 Celtic Knot Ring variants — each as a separate product
 // ============================================================
 
-const PRODUCTS = [
+var PRODUCTS = [
 
   // ═══════════════════════════════════════════════════════════
   // WOMEN'S FASHION — RINGS
@@ -319,7 +319,7 @@ const PRODUCTS = [
     originalPrice: 45.98,
     rating: 4.4,
     reviews: 1760,
-    image: "images/dress-ihot-vneck-wrap.jpeg",
+    image: "images/dress-ihot-vneck-wrap.jpg",
     description: "Sexy V neck sleeveless faux wrap ruched bodycon dress by ihot. Perfect for casual outings, cocktail parties, and night out events. The wrap design flatters all body types with a figure-hugging silhouette. Made with stretchy, comfortable fabric. Features 3 sustainability features.",
     shortDesc: "Sleeveless V-neck faux wrap ruched bodycon cocktail party dress",
     affiliateLink: "https://amzn.to/4tsjTR6",
@@ -340,7 +340,7 @@ const PRODUCTS = [
     originalPrice: 29.99,
     rating: 4.2,
     reviews: 23637,
-    image: "images/dress-missufe-ruched-midi.jpeg",
+    image: "images/dress-missufe-ruched-midi.jpg",
     description: "Missufe's best-selling ruched midi bodycon T-shirt dress combines casual comfort with a flattering fit. Short sleeves and a crew neck make it versatile for everyday wear or dressed-up occasions. The ruched detailing creates a beautiful drape effect. Over 50+ bought in the past month.",
     shortDesc: "Short sleeve ruched casual sundress midi bodycon T-shirt dress",
     affiliateLink: "https://amzn.to/4udB5es",
@@ -361,7 +361,7 @@ const PRODUCTS = [
     originalPrice: 34.99,
     rating: 4.1,
     reviews: 2262,
-    image: "images/dress-wiholl-boatneck-mini.jpeg",
+    image: "images/dress-wiholl-boatneck-mini.jpg",
     description: "WIHOLL's sleeveless boat neck mini dress is your go-to for summer parties and club nights. The slim fit bodycon silhouette flatters your figure while the boat neck adds a touch of elegance. Lightweight and easy to move in. Perfect for warm evenings out.",
     shortDesc: "Sleeveless boat neck slim fit party club bodycon mini dress",
     affiliateLink: "https://amzn.to/48XEN3b",
@@ -382,7 +382,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.0,
     reviews: 19512,
-    image: "images/dress-ecowish-lace-swing.jpeg",
+    image: "images/dress-ecowish-lace-swing.jpg",
     description: "ECOWISH's romantic lace mini swing dress features a flattering V-neck, delicate spaghetti straps, and a charming bowknot backless design. The tiered ruffle skirt creates a flirty, feminine silhouette perfect for summer outings, garden parties, and casual dates. Features 3 sustainability features.",
     shortDesc: "V-neck spaghetti strap bowknot backless lace mini swing skater dress",
     affiliateLink: "https://amzn.to/4ntWaPc",
@@ -403,7 +403,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.5,
     reviews: 25,
-    image: "images/dress-snowrose-strapless-corset.jpeg",
+    image: "images/dress-snowrose-strapless-corset.jpg",
     description: "SNOWROSE's stunning tiered homecoming dress features a structured strapless corset bodice with delicate lace trim and a flowing chiffon A-line skirt. Perfect for homecoming, prom, cocktail parties, and formal events. The boned corset provides a secure, flattering fit.",
     shortDesc: "Chiffon strapless A-line corset short formal cocktail party homecoming dress",
     affiliateLink: "https://amzn.to/4eD5ZYF",
@@ -424,7 +424,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.2,
     reviews: 147,
-    image: "images/dress-starrovelex-glitter-vneck.jpeg",
+    image: "images/dress-starrovelex-glitter-vneck.jpg",
     description: "StarRovelex's glamorous glitter cocktail dress features a flattering V-neck and a flirty A-line silhouette. The textured jacquard fabric with embossed floral details adds a touch of luxury. Perfect for homecoming, prom, weddings, and summer parties.",
     shortDesc: "Glitter V-neck short homecoming prom cocktail wedding guest mini dress",
     affiliateLink: "https://amzn.to/4uFt5m1",
@@ -445,7 +445,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 3.5,
     reviews: 74,
-    image: "images/dress-shawgobow-halter-corset.jpeg",
+    image: "images/dress-shawgobow-halter-corset.jpg",
     description: "ShawGobow's bold jacquard halter corset dress features a deep V-neck, structured boned corset bodice, and a playful bow back detail. The flared A-line skirt gives a romantic, feminine look. Perfect for birthday parties, homecoming, prom, and formal events.",
     shortDesc: "Jacquard corset deep V halter mini dress with bow back for homecoming prom formal",
     affiliateLink: "https://amzn.to/4d5osvH",
@@ -466,7 +466,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.4,
     reviews: 40,
-    image: "images/dress-charmingbridal-crystal.jpeg",
+    image: "images/dress-charmingbridal-crystal.jpg",
     description: "CharmingBridal's stunning crystal-embellished homecoming dress features a strapless sweetheart neckline with sparkly crystal and sequin bodice, and a flowing white tulle A-line skirt. The perfect blend of glamour and elegance for homecoming, prom, and formal events.",
     shortDesc: "Strapless A-line crystal embellished homecoming short prom dress",
     affiliateLink: "https://amzn.to/4nypROX",
@@ -487,7 +487,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.1,
     reviews: 82,
-    image: "images/dress-chupeng-crystal-spaghetti.jpeg",
+    image: "images/dress-chupeng-crystal-spaghetti.jpg",
     description: "Chupeng's exquisite crystal beaded prom dress features dazzling spaghetti straps adorned with silver crystals, a sparkling beaded bodice, and a dreamy layered organza tulle skirt. Perfect for homecoming, prom, cocktail parties, and formal events.",
     shortDesc: "Crystal beaded spaghetti strap organza tiered short prom party homecoming gown",
     affiliateLink: "https://amzn.to/4uK5gtr",
@@ -508,7 +508,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 4.0,
     reviews: 8,
-    image: "images/dress-zechun-gold-lace.jpeg",
+    image: "images/dress-zechun-gold-lace.jpg",
     description: "Zechun's luxurious gold lace applique homecoming gown features an elegant illusion neckline with intricate gold embroidery and pearl beading on a sheer mesh bodice, paired with a flowing A-line tulle skirt with gold lace hem trim. Perfect for homecoming, prom, weddings, and bridesmaid occasions.",
     shortDesc: "Gold lace applique homecoming prom bridesmaid gown with embroidered tulle skirt",
     affiliateLink: "https://amzn.to/4tuVBpG",
@@ -529,7 +529,7 @@ const PRODUCTS = [
     originalPrice: null,
     rating: 5.0,
     reviews: 2,
-    image: "images/dress-ymsha-sweetheart-lace.jpeg",
+    image: "images/dress-ymsha-sweetheart-lace.jpg",
     description: "YMSHA's elegant sweetheart homecoming dress features a stunning strapless sweetheart neckline with intricate silver crystal and beaded lace appliques, and a flowing tiered tulle A-line skirt. 100% handmade with high quality lace. Corset/lace-up back for a perfect fit. Hand wash only.",
     shortDesc: "Sweetheart tiered short homecoming lace chiffon prom cocktail party dress",
     affiliateLink: "https://amzn.to/4dinwTr",
@@ -555,8 +555,223 @@ const PRODUCTS = [
   // BEAUTY & SKINCARE
   // ═══════════════════════════════════════════════════════════
 
+
+  // ═══════════════════════════════════════════════════════════
+  // BEAUTY & SKINCARE — PRESS ON NAILS
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "foccna-rainbow-marble-press-on-nails",
+    name: "Foccna Extra Long Pink Press on Nails Rainbow Acrylic False Nails with Sticker — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 8.56,
+    originalPrice: null,
+    rating: 3.8,
+    reviews: 135,
+    image: "images/nails-foccna-rainbow-marble.jpg",
+    description: "Foccna Extra Long Pink Press on Nails feature a stunning rainbow marble design with colorful swirls of yellow, orange, pink, blue, and green on a nude base. Each set contains 24 pieces with nail sticker adhesive included. Perfect for prom, parties, and special occasions. Luxurious coffin shape with glossy finish.",
+    shortDesc: "Extra long coffin press-on nails with rainbow marble swirl design — 24 pcs",
+    affiliateLink: "https://amzn.to/4wFDWhR",
+    colors: [],
+    tags: ["press on nails", "fake nails", "false nails", "rainbow nails", "marble nails", "coffin nails", "long nails", "nail art", "prom nails"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "Foccna Rainbow Marble Long Press On Nails | VELVORA",
+    metaDesc: "Shop Foccna Extra Long Pink Press on Nails Rainbow Acrylic False Nails at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "srimnuyy-coffin-gradient-french-tip-nails",
+    name: "SRIMNUYY Coffin Press on Nails Long Colorful Fake Nails French Tip Color Gradient Extra Long Glossy Acrylic — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 7.99,
+    originalPrice: null,
+    rating: 4.0,
+    reviews: 52,
+    image: "images/nails-srimnuyy-coffin-gradient.jpg",
+    description: "SRIMNUYY Coffin Press on Nails feature a gorgeous color gradient French tip design with ombre transitions across a full spectrum of colors. Extra long coffin shape with a high-gloss acrylic finish. Set includes 24 pieces with nail glue for easy application. Perfect for girls who love bold, colorful nail art.",
+    shortDesc: "Long coffin French tip press-on nails with colorful gradient ombre design — 24 pcs",
+    affiliateLink: "https://amzn.to/4uq3Jcb",
+    colors: [],
+    tags: ["press on nails", "coffin nails", "french tip nails", "gradient nails", "ombre nails", "fake nails", "long nails", "colorful nails", "nail art"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "SRIMNUYY Coffin Gradient French Tip Press On Nails | VELVORA",
+    metaDesc: "Shop SRIMNUYY Coffin Press on Nails Long Colorful French Tip Color Gradient at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "yosomk-almond-rainbow-swirl-nails",
+    name: "YOSOMK Medium Almond Fake Nails Colorful Rainbow Swirl Designs Glossy False Nail Glue on — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 7.99,
+    originalPrice: null,
+    rating: 3.8,
+    reviews: 3016,
+    image: "images/nails-yosomk-almond-rainbow-swirl.jpg",
+    description: "YOSOMK Medium Almond Press on Nails feature vibrant rainbow swirl stripe designs in a beautiful almond shape. Each nail has a unique colorful swirled pattern with a glossy finish. Set includes 24 pieces. Suitable for women who love playful, artistic nail looks. Save 5% when buying 2 select items.",
+    shortDesc: "Medium almond shaped press-on nails with colorful rainbow swirl stripe designs — 24 pcs",
+    affiliateLink: "https://amzn.to/49Qx4Ee",
+    colors: [],
+    tags: ["press on nails", "almond nails", "rainbow nails", "swirl nails", "fake nails", "false nails", "nail art", "colorful nails", "glossy nails"],
+    featured: true,
+    badge: "3K+ Reviews ⭐",
+    metaTitle: "YOSOMK Almond Rainbow Swirl Press On Nails | VELVORA",
+    metaDesc: "Shop YOSOMK Medium Almond Fake Nails Colorful Rainbow Swirl Designs at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "morily-ombre-crystal-stiletto-nails",
+    name: "morily 24Pcs Ombre Press on Nails Glossy Pink Stiletto Fake Nails Luxury Crystal Acrylic — Medium Long",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 9.99,
+    originalPrice: null,
+    rating: 4.1,
+    reviews: 5351,
+    image: "images/nails-morily-ombre-crystal-stiletto.jpg",
+    description: "morily's luxury crystal stiletto press on nails feature a stunning nude-pink ombre base adorned with sparkling crystal rhinestone accents and iridescent glitter details. Medium-long stiletto shape for an elegant, pointed look. Set includes 24 pieces. Perfect for weddings, special events, or everyday glamour.",
+    shortDesc: "Glossy pink ombre stiletto press-on nails with luxury crystal rhinestone accents — 24 pcs",
+    affiliateLink: "https://amzn.to/4uq3Swf",
+    colors: [],
+    tags: ["press on nails", "stiletto nails", "ombre nails", "crystal nails", "rhinestone nails", "luxury nails", "fake nails", "pink nails", "wedding nails"],
+    featured: true,
+    badge: "5K+ Reviews 🔥",
+    metaTitle: "morily Ombre Crystal Stiletto Press On Nails | VELVORA",
+    metaDesc: "Shop morily 24Pcs Ombre Press on Nails Glossy Pink Stiletto Luxury Crystal Acrylic at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "fjsmtop-almond-white-french-glitter-nails",
+    name: "FJSMTOPl Almond Press on Nails Short White French Glitter Swirl Glue on Cute Acrylic Nail — Women Manicure",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 6.59,
+    originalPrice: null,
+    rating: 4.0,
+    reviews: 2353,
+    image: "images/nails-fjsmtop-almond-white-french.jpg",
+    description: "FJSMTOPl Almond Press on Nails in White French style feature a chic nude base with elegant white French tips accented by a silver glitter line border. Short almond shape for a natural, everyday look. Easy to apply with included nail glue. Perfect for work, bridal looks, or anyone who loves a clean, classic nail style.",
+    shortDesc: "Short almond press-on nails with white French tip and silver glitter border design",
+    affiliateLink: "https://amzn.to/4nuHz5M",
+    colors: [],
+    tags: ["press on nails", "almond nails", "french tip nails", "white nails", "glitter nails", "short nails", "fake nails", "bridal nails", "everyday nails"],
+    featured: true,
+    badge: "2K+ Reviews ⭐",
+    metaTitle: "FJSMTOPl Almond White French Glitter Press On Nails | VELVORA",
+    metaDesc: "Shop FJSMTOPl Almond Press on Nails Short White French Glitter Swirl at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "lbpepamz-3d-flower-butterfly-gradient-nails",
+    name: "LBPEPAMZ Colorful Press on Nails Medium Almond 3D Flower Butterfly Designs Gradient Acrylic — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 6.98,
+    originalPrice: 7.99,
+    rating: 4.0,
+    reviews: 453,
+    image: "images/nails-lbpepamz-3d-flower-butterfly.jpg",
+    description: "LBPEPAMZ Colorful Press on Nails feature stunning 3D flower and butterfly designs on a rainbow-striped gradient background. Medium almond/stiletto shape with a glossy full-cover finish. Set includes 24 pieces. Over 50+ bought in the past month — a crowd favourite for those who love bold, artistic nails.",
+    shortDesc: "Medium almond press-on nails with 3D flowers, butterflies and rainbow gradient design — 24 pcs",
+    affiliateLink: "https://amzn.to/4df74Vx",
+    colors: [],
+    tags: ["press on nails", "butterfly nails", "3d flower nails", "gradient nails", "rainbow nails", "almond nails", "fake nails", "colorful nails", "nail art"],
+    featured: true,
+    badge: "50+ Bought 🔥",
+    metaTitle: "LBPEPAMZ 3D Flower Butterfly Gradient Press On Nails | VELVORA",
+    metaDesc: "Shop LBPEPAMZ Colorful Press on Nails Medium Almond 3D Flower Butterfly Designs at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "misud-pink-ombre-glitter-coffin-nails",
+    name: "MISUD Press on Nails Medium Coffin Pink Ombre Acrylic Bling Glitter Design Glue on — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 7.33,
+    originalPrice: null,
+    rating: 3.8,
+    reviews: 3624,
+    image: "images/nails-misud-pink-ombre-glitter.jpg",
+    description: "MISUD Press on Nails in medium coffin shape feature a gorgeous pink ombre base covered in dazzling silver and iridescent glitter, with white floral butterfly art accents. The bling glitter design catches light beautifully. Set includes 24 pieces. Save 8% when buying 2 select items.",
+    shortDesc: "Medium coffin press-on nails with pink ombre, bling glitter and butterfly floral art — 24 pcs",
+    affiliateLink: "https://amzn.to/42HZ9Ka",
+    colors: [],
+    tags: ["press on nails", "coffin nails", "pink nails", "ombre nails", "glitter nails", "bling nails", "butterfly nails", "fake nails", "nail art"],
+    featured: true,
+    badge: "3K+ Reviews ⭐",
+    metaTitle: "MISUD Pink Ombre Bling Glitter Coffin Press On Nails | VELVORA",
+    metaDesc: "Shop MISUD Press on Nails Medium Coffin Pink Ombre Acrylic Bling Glitter Design at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "tbrztr-butterfly-rainbow-stripe-nails",
+    name: "TBRZTR Butterfly Press on Nails Medium Length Rainbow Stripe Square Acrylic Coffin Colorful Butterfly Stick on Nails — 24 pcs",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 6.98,
+    originalPrice: null,
+    rating: 3.6,
+    reviews: 91,
+    image: "images/nails-tbrztr-butterfly-rainbow-stripe.jpg",
+    description: "TBRZTR Butterfly Press on Nails feature a vibrant rainbow stripe background with colorful 3D butterfly nail art designs. Medium length square/coffin shape with a glossy full-cover finish. Set includes 24 pieces. Bold and eye-catching for festivals, parties, and summer looks.",
+    shortDesc: "Medium coffin press-on nails with rainbow stripe and colorful butterfly designs — 24 pcs",
+    affiliateLink: "https://amzn.to/3PGnInQ",
+    colors: [],
+    tags: ["press on nails", "butterfly nails", "rainbow nails", "stripe nails", "coffin nails", "square nails", "fake nails", "colorful nails", "festival nails"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "TBRZTR Butterfly Rainbow Stripe Coffin Press On Nails | VELVORA",
+    metaDesc: "Shop TBRZTR Butterfly Press on Nails Medium Length Rainbow Stripe Square Acrylic at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "bhooka-rainbow-gradient-glitter-coffin-nails",
+    name: "BHOOKA 24 Pcs Colorful Coffin Press on Nails Medium Length Glitter Rainbow Gradient Acrylic Full Cover Sparkly Reusable",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 6.11,
+    originalPrice: null,
+    rating: 3.8,
+    reviews: 115,
+    image: "images/nails-bhooka-rainbow-gradient-glitter.jpg",
+    description: "BHOOKA Colorful Press on Nails feature a stunning rainbow color gradient with glitter sparkle in a medium coffin shape. Full cover design with a reusable acrylic construction. Set includes 24 pieces. Perfect for DIY nail art manicure at home. A budget-friendly option for bold, colourful nails.",
+    shortDesc: "Medium coffin press-on nails with rainbow gradient glitter full cover sparkly design — 24 pcs",
+    affiliateLink: "https://amzn.to/3PwGC0e",
+    colors: [],
+    tags: ["press on nails", "coffin nails", "rainbow nails", "gradient nails", "glitter nails", "sparkly nails", "reusable nails", "fake nails", "diy nails"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "BHOOKA Rainbow Gradient Glitter Coffin Press On Nails | VELVORA",
+    metaDesc: "Shop BHOOKA 24 Pcs Colorful Coffin Press on Nails Medium Length Glitter Rainbow Gradient at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "tbrztr-glazed-window-ballet-nails",
+    name: "TBRZTR 24Pcs Colored Window Press on Nails Medium Ballet Shaped Glossy Colored Glazed Window Pattern False Nails Reusable",
+    category: "beauty-skincare",
+    subcategory: "Press On Nails",
+    price: 6.88,
+    originalPrice: null,
+    rating: 3.8,
+    reviews: 70,
+    image: "images/nails-tbrztr-glazed-window-ballet.jpg",
+    description: "TBRZTR Colored Window Press on Nails feature a unique stained glass glazed window pattern with holographic colorful panels divided by gold lines — inspired by stained glass art. Medium ballet coffin shape with a high-gloss finish. Set includes 24 reusable pieces. A truly one-of-a-kind nail design.",
+    shortDesc: "Medium ballet press-on nails with colorful glazed stained glass window pattern — 24 pcs",
+    affiliateLink: "https://amzn.to/4nHPxsv",
+    colors: [],
+    tags: ["press on nails", "ballet nails", "stained glass nails", "glazed nails", "colorful nails", "reusable nails", "fake nails", "nail art", "unique nails"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "TBRZTR Glazed Window Pattern Ballet Press On Nails | VELVORA",
+    metaDesc: "Shop TBRZTR 24Pcs Colored Glazed Window Press on Nails Medium Ballet Shaped at VELVORA. Available on Amazon with FREE returns."
+  },
+
   // ─────────────────────────────────────────────────────────
-  // ADD BEAUTY PRODUCTS BELOW
+  // ADD MORE BEAUTY PRODUCTS BELOW
   // ─────────────────────────────────────────────────────────
 
 ];
@@ -564,10 +779,10 @@ const PRODUCTS = [
 // ============================================================
 // SUBCATEGORY DEFINITIONS
 // ============================================================
-const SUBCATEGORIES = {
+var SUBCATEGORIES = {
   "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Knitwear","Accessories","Shoes","Bags"],
   "mens-fashion": ["Shirts","Blazers","Trousers","Casual","Accessories","Shoes","Jackets","Suits"],
-  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care"]
+  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care","Press On Nails"]
 };
 
 // ============================================================
