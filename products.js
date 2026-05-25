@@ -985,6 +985,221 @@ var PRODUCTS = [
     metaDesc: "Shop TBRZTR 24Pcs Colored Glazed Window Press on Nails Medium Ballet Shaped at VELVORA. Available on Amazon with FREE returns."
   },
 
+
+  // ═══════════════════════════════════════════════════════════
+  // BEAUTY & SKINCARE — EYESHADOW PALETTES
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "ucanbe-fantasy-39color-eyeshadow-palette",
+    name: "UCANBE Fantasy 39 Colors Highly Pigmented Eyeshadow Palette Matte Shimmer Metallic Long Lasting",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 8.99,
+    originalPrice: 9.99,
+    rating: 4.5,
+    reviews: 29551,
+    image: "images/eyeshadow-ucanbe-fantasy-39color.jpeg",
+    description: "UCANBE's Fantasy eyeshadow palette features 39 highly pigmented shades in matte, shimmer, and metallic finishes — from bold vivids to everyday neutrals. Waterproof and long-lasting formula blends effortlessly. Amazon's Choice with 4K+ bought in the past month. Perfect as a makeup gift kit.",
+    shortDesc: "39 highly pigmented matte shimmer metallic eyeshadow palette — long lasting blendable",
+    affiliateLink: "https://amzn.to/4e0OFMmv",
+    colors: [],
+    tags: ["eyeshadow palette", "pigmented eyeshadow", "matte eyeshadow", "shimmer eyeshadow", "makeup palette", "colorful eyeshadow", "eyeshadow kit", "makeup gift"],
+    featured: true,
+    badge: "4K+ Bought 🔥",
+    metaTitle: "UCANBE Fantasy 39 Colors Eyeshadow Palette | VELVORA",
+    metaDesc: "Shop UCANBE Fantasy Highly Pigmented Eyeshadow Palette Matte Shimmer Metallic at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "covergirl-eye-enhancer-natural-nudes",
+    name: "COVERGIRL Eye Enhancers Eyeshadow Palette Natural Nudes 4-Pan",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 5.48,
+    originalPrice: 7.49,
+    rating: 4.3,
+    reviews: 24564,
+    image: "images/eyeshadow-covergirl-natural-nudes.jpeg",
+    description: "COVERGIRL Eye Enhancers palette in Natural Nudes features 4 coordinated shimmer shades — from champagne to warm taupe — perfect for a clean, everyday eye look. Comes with a built-in applicator. Amazon's Choice with 5K+ bought in the past month. Lightweight and easy to blend.",
+    shortDesc: "COVERGIRL 4-pan natural nudes shimmer eyeshadow palette with applicator",
+    affiliateLink: "https://amzn.to/3PBPwKa",
+    colors: [],
+    tags: ["eyeshadow palette", "nude eyeshadow", "natural eyeshadow", "covergirl eyeshadow", "everyday eyeshadow", "shimmer eyeshadow", "4 pan palette"],
+    featured: true,
+    badge: "27% Off 🔥",
+    metaTitle: "COVERGIRL Eye Enhancers Natural Nudes Eyeshadow Palette | VELVORA",
+    metaDesc: "Shop COVERGIRL Eye Enhancers Eyeshadow Palette Natural Nudes at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "bestland-2pack-12color-nude-eyeshadow",
+    name: "BestLand 2 Pack 12 Colors Nude Eyeshadow Palette Natural Matte Shimmer Glitter Pigment Waterproof Smokey Makeup Kit",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 9.99,
+    originalPrice: null,
+    rating: 4.3,
+    reviews: 18196,
+    image: "images/eyeshadow-bestland-2pack-nude.jpeg",
+    description: "BestLand's 2-pack eyeshadow set includes two 12-color palettes — one matte and one shimmer — covering warm nudes, pinks, and neutrals. Waterproof and highly pigmented formula. 3K+ bought in the past month. Perfect for building natural to smokey eye looks. Professional quality at an unbeatable price.",
+    shortDesc: "2 pack 12-color nude matte shimmer glitter pigment eyeshadow palette waterproof smokey kit",
+    affiliateLink: "https://amzn.to/4dvuplX",
+    colors: [],
+    tags: ["eyeshadow palette", "nude eyeshadow", "2 pack eyeshadow", "matte eyeshadow", "shimmer eyeshadow", "smokey eye", "waterproof eyeshadow", "makeup kit"],
+    featured: true,
+    badge: "3K+ Bought 🔥",
+    metaTitle: "BestLand 2 Pack 12 Colors Nude Eyeshadow Palette | VELVORA",
+    metaDesc: "Shop BestLand 2 Pack 12 Colors Nude Eyeshadow Palette Natural Matte Shimmer at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "revlon-colorstay-eyeshadow-quad-addictive",
+    name: "Revlon ColorStay Day to Night Eyeshadow Quad 500 Addictive — Longwear Crease & Smudge Proof",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 7.77,
+    originalPrice: 8.42,
+    rating: 4.4,
+    reviews: 18745,
+    image: "images/eyeshadow-revlon-colorstay-addictive.jpeg",
+    description: "Revlon ColorStay Day to Night Eyeshadow Quad in shade 500 Addictive features 4 coordinated neutral shimmer shades — ivory, champagne, warm bronze, and deep brown. Up to 24-hour wear with a buttery soft, crease and smudge proof formula. Amazon's Choice with 2K+ bought in the past month.",
+    shortDesc: "Revlon ColorStay 24H longwear quad eyeshadow palette — neutral shimmer shades",
+    affiliateLink: "https://amzn.to/4v5ihOa",
+    colors: [],
+    tags: ["revlon eyeshadow", "eyeshadow quad", "long lasting eyeshadow", "neutral eyeshadow", "shimmer eyeshadow", "day to night eyeshadow", "smudge proof eyeshadow"],
+    featured: true,
+    badge: "Amazon's Choice ⭐",
+    metaTitle: "Revlon ColorStay Day to Night Eyeshadow Quad Addictive | VELVORA",
+    metaDesc: "Shop Revlon ColorStay Day to Night Eyeshadow Quad 500 Addictive at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "revlon-colorstay-eyeshadow-quad-seductive",
+    name: "Revlon ColorStay Day to Night Eyeshadow Quad 530 Seductive — Longwear Crease & Smudge Proof",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 7.99,
+    originalPrice: 8.42,
+    rating: 4.5,
+    reviews: 8156,
+    image: "images/eyeshadow-revlon-colorstay-seductive.jpeg",
+    description: "Revlon ColorStay Day to Night Eyeshadow Quad in shade 530 Seductive features 4 stunning purple and lavender shimmer shades — from soft lilac to deep plum. Up to 24-hour wear with a buttery soft, crease and smudge proof formula. Amazon's Choice with 2K+ bought in the past month.",
+    shortDesc: "Revlon ColorStay 24H longwear quad eyeshadow palette — purple lavender shimmer shades",
+    affiliateLink: "https://amzn.to/4tQuBkn",
+    colors: [],
+    tags: ["revlon eyeshadow", "eyeshadow quad", "purple eyeshadow", "lavender eyeshadow", "shimmer eyeshadow", "long lasting eyeshadow", "day to night eyeshadow"],
+    featured: true,
+    badge: "Amazon's Choice ⭐",
+    metaTitle: "Revlon ColorStay Day to Night Eyeshadow Quad Seductive | VELVORA",
+    metaDesc: "Shop Revlon ColorStay Day to Night Eyeshadow Quad 530 Seductive at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "evpct-dusty-pink-single-eyeshadow",
+    name: "evpct Dusty Pink Champagne Single Eyeshadow — Rose Gold Ice Pink Nude Glitter Cream High Pigment Waterproof",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 6.99,
+    originalPrice: null,
+    rating: 4.1,
+    reviews: 2681,
+    image: "images/eyeshadow-evpct-dusty-pink-single.jpeg",
+    description: "evpct's single eyeshadow in Dusty Pink Champagne is a highly pigmented matte mauve-brown shade perfect for everyday and smokey eye looks. Waterproof monochrome formula in a compact white case. 1K+ bought in the past month. Great for older women and anyone who loves a clean, buildable eyeshadow.",
+    shortDesc: "Single highly pigmented dusty pink matte eyeshadow — waterproof monochrome compact",
+    affiliateLink: "https://amzn.to/3Q0E5vF",
+    colors: [],
+    tags: ["single eyeshadow", "matte eyeshadow", "dusty pink eyeshadow", "nude eyeshadow", "waterproof eyeshadow", "monochrome eyeshadow", "high pigment eyeshadow"],
+    featured: true,
+    badge: "1K+ Bought 🔥",
+    metaTitle: "evpct Dusty Pink Single Eyeshadow Compact | VELVORA",
+    metaDesc: "Shop evpct Dusty Pink Champagne Single Eyeshadow High Pigment Waterproof at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "baisen-diary-smokey-9color-eyeshadow",
+    name: "BAISEN DIARY 9 Color Smokey Eyeshadow Palette Highly Pigmented Matte Glitter Black Silver Gray Waterproof Blendable",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 5.99,
+    originalPrice: null,
+    rating: 4.3,
+    reviews: 1149,
+    image: "images/eyeshadow-baisen-smokey-9color.jpeg",
+    description: "BAISEN DIARY's smokey eyeshadow palette features 9 highly pigmented shades in black, silver, and gray — matte and glitter finishes — for a sultry glam look. Waterproof and long-lasting. Amazon's Choice with 700+ bought in the past month. Perfect for dramatic evening and editorial looks.",
+    shortDesc: "9-color black silver gray smokey matte glitter eyeshadow palette — waterproof blendable",
+    affiliateLink: "https://amzn.to/4x3z0DE",
+    colors: [],
+    tags: ["smokey eyeshadow", "eyeshadow palette", "black eyeshadow", "gray eyeshadow", "glitter eyeshadow", "matte eyeshadow", "waterproof eyeshadow", "dramatic eyeshadow"],
+    featured: true,
+    badge: "Amazon's Choice ⭐",
+    metaTitle: "BAISEN DIARY 9 Color Smokey Eyeshadow Palette | VELVORA",
+    metaDesc: "Shop BAISEN DIARY 9 Color Smokey Eyeshadow Palette Highly Pigmented Black Silver Gray at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "ucanbe-aromas-18color-nude-eyeshadow",
+    name: "UCANBE Aromas 18 Colors Nude Eyeshadow Palette Multi Reflective Shimmer Matte Glitter Pressed Pearls Long Lasting",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 7.99,
+    originalPrice: null,
+    rating: 4.5,
+    reviews: 15764,
+    image: "images/eyeshadow-ucanbe-aromas-18color.jpeg",
+    description: "UCANBE's Aromas eyeshadow palette features 18 beautifully curated pink and mauve shades — matte, shimmer, and pressed glitter finishes. Named shades like Bare, Dreamworld, Fairytale, and Bliss create endless romantic looks. Amazon's Choice with 800+ bought in the past month. Features 3 sustainability features.",
+    shortDesc: "18-color nude pink mauve shimmer matte glitter eyeshadow palette — long lasting",
+    affiliateLink: "https://amzn.to/4e6Gu03",
+    colors: [],
+    tags: ["eyeshadow palette", "nude eyeshadow", "pink eyeshadow", "shimmer eyeshadow", "matte eyeshadow", "glitter eyeshadow", "romantic eyeshadow", "ucanbe eyeshadow"],
+    featured: true,
+    badge: "800+ Bought 🔥",
+    metaTitle: "UCANBE Aromas 18 Colors Nude Eyeshadow Palette | VELVORA",
+    metaDesc: "Shop UCANBE Aromas 18 Colors Nude Eyeshadow Palette Shimmer Matte Glitter at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "ucanbe-86color-allset-palette-a",
+    name: "UCANBE Pretty All Set 86 Colors Eyeshadow Palette Holiday Gift Set Matte Shimmer Highlighter Contour Blush All In One",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 15.29,
+    originalPrice: null,
+    rating: 4.6,
+    reviews: 11949,
+    image: "images/eyeshadow-ucanbe-86color-allset-a.jpeg",
+    description: "UCANBE's Pretty All Set is the ultimate makeup kit — 86 colors including eyeshadow, highlighter, contour, and blush all in one triple-fold palette. Matte and shimmer finishes. Amazon's Choice with 100+ bought in the past month. Features 3 sustainability features. Perfect as a Valentine's Day or holiday gift.",
+    shortDesc: "86-color all-in-one eyeshadow highlighter contour blush palette — holiday gift set",
+    affiliateLink: "https://amzn.to/3PpPsx3",
+    colors: [],
+    tags: ["eyeshadow palette", "86 colors", "all in one palette", "makeup gift set", "highlighter palette", "contour palette", "blush palette", "holiday gift makeup"],
+    featured: true,
+    badge: "Amazon's Choice ⭐",
+    metaTitle: "UCANBE Pretty All Set 86 Colors Eyeshadow Gift Palette | VELVORA",
+    metaDesc: "Shop UCANBE Pretty All Set 86 Colors Eyeshadow Palette Holiday Gift Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "ucanbe-86color-allset-with-brushes",
+    name: "UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Makeup Set — Matte Shimmer Glitter Highlighter Contour Blush",
+    category: "beauty-skincare",
+    subcategory: "Eyeshadow",
+    price: 18.79,
+    originalPrice: null,
+    rating: 4.6,
+    reviews: 11949,
+    image: "images/eyeshadow-ucanbe-86color-with-brushes.jpeg",
+    description: "UCANBE's complete makeup set includes an 86-color eyeshadow palette with matte, shimmer, and glitter shades plus highlighter, contour, and blush — all paired with 15 professional makeup brushes. 500+ bought in the past month. Features 3 sustainability features. The perfect all-in-one Valentine's Day gift set.",
+    shortDesc: "86-color eyeshadow palette with 15 brushes — matte shimmer glitter highlighter contour blush set",
+    affiliateLink: "https://amzn.to/4tV405M",
+    colors: [],
+    tags: ["eyeshadow palette", "makeup brush set", "86 colors", "makeup gift set", "eyeshadow with brushes", "complete makeup set", "valentines day gift", "highlighter contour"],
+    featured: true,
+    badge: "500+ Bought 🔥",
+    metaTitle: "UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Set | VELVORA",
+    metaDesc: "Shop UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Makeup Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
   // ─────────────────────────────────────────────────────────
   // ADD MORE BEAUTY PRODUCTS BELOW
   // ─────────────────────────────────────────────────────────
@@ -997,7 +1212,7 @@ var PRODUCTS = [
 var SUBCATEGORIES = {
   "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Knitwear","Accessories","Shoes","Bags"],
   "mens-fashion": ["Shirts","Blazers","Trousers","Casual","Accessories","Shoes","Jackets","Suits"],
-  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care","Press On Nails"]
+  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care","Press On Nails","Eyeshadow"]
 };
 
 // ============================================================
