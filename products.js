@@ -2,7 +2,7 @@
 // VELVORA - Products Data File
 // 14 Celtic Knot Ring variants — each as a separate product
 // ============================================================
-// new productos 
+
 var PRODUCTS = [
 
   // ═══════════════════════════════════════════════════════════
