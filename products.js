@@ -758,6 +758,292 @@ var PRODUCTS = [
 
   // ─────────────────────────────────────────────────────────
 
+
+  // ═══════════════════════════════════════════════════════════
+  // WOMEN'S FASHION — PANTS & BOTTOMS
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "lepunuo-cargo-pants-highwaist-khaki",
+    name: "Lepunuo Cargo Pants for Women High Waisted Baggy Stretchy Wide Leg Y2K Streetwear with 6 Pockets",
+    category: "womens-fashion",
+    subcategory: "Bottoms",
+    price: 29.69,
+    originalPrice: 32.99,
+    rating: 4.3,
+    reviews: 8593,
+    image: "images/pants-lepunuo-cargo-highwaist-khaki.jpeg",
+    description: "Lepunuo's high waisted cargo pants feature a baggy wide leg fit with 6 functional pockets. Stretchy fabric for all-day comfort. Perfect for Y2K streetwear, hiking outfits, and casual outdoor looks. 100+ bought in the past month. Available in Khaki.",
+    shortDesc: "High waisted baggy stretchy wide leg cargo pants with 6 pockets — Y2K streetwear",
+    affiliateLink: "https://amzn.to/49vf4PS",
+    colors: [],
+    tags: ["cargo pants", "wide leg pants", "high waist pants", "y2k pants", "streetwear", "hiking pants", "baggy pants", "women's pants"],
+    featured: true,
+    badge: "10% Off 🔥",
+    metaTitle: "Lepunuo High Waist Wide Leg Cargo Pants Women | VELVORA",
+    metaDesc: "Shop Lepunuo Cargo Pants for Women High Waisted Baggy Wide Leg Y2K Streetwear at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "zmpsiisa-cargo-pants-6pocket-green",
+    name: "ZMPSIISA Women High Waisted Cargo Pants Wide Leg Casual 6 Pockets Combat Military Trousers",
+    category: "womens-fashion",
+    subcategory: "Bottoms",
+    price: 29.99,
+    originalPrice: 35.99,
+    rating: 4.4,
+    reviews: 2690,
+    image: "images/pants-zmpsiisa-cargo-6pocket-green.jpeg",
+    description: "ZMPSIISA high waisted cargo pants feature a wide leg silhouette with 6 combat-style pockets. Military-inspired design perfect for hiking outfits, outdoor adventures, and casual streetwear. Available in Green.",
+    shortDesc: "High waisted wide leg cargo combat military trousers with 6 pockets",
+    affiliateLink: "https://amzn.to/4x5W4ld",
+    colors: [],
+    tags: ["cargo pants", "military pants", "combat trousers", "wide leg pants", "high waist pants", "hiking pants", "outdoor pants", "women's pants"],
+    featured: true,
+    badge: "17% Off 🔥",
+    metaTitle: "ZMPSIISA High Waist Wide Leg Cargo Military Pants | VELVORA",
+    metaDesc: "Shop ZMPSIISA Women High Waisted Cargo Pants Wide Leg 6 Pockets Combat Military at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "ivir-cargo-pants-7pocket-armygreen",
+    name: "IVIR Cargo Pants Women High Waist Wide Leg Casual 7 Pockets Stretchy Drawstring Baggy Y2K Trousers",
+    category: "womens-fashion",
+    subcategory: "Bottoms",
+    price: 32.99,
+    originalPrice: 35.99,
+    rating: 4.2,
+    reviews: 1070,
+    image: "images/pants-ivir-cargo-7pocket-armygreen.jpeg",
+    description: "IVIR cargo pants feature a high waist wide leg design with 7 generous pockets and a stretchy drawstring waist. Baggy Y2K inspired silhouette perfect for hiking outfits, travel, and outdoor adventures. 50+ bought in the past month. Available in Army Green.",
+    shortDesc: "High waist wide leg baggy cargo pants with 7 pockets stretchy drawstring — Y2K",
+    affiliateLink: "https://amzn.to/4ec7tZ0",
+    colors: [],
+    tags: ["cargo pants", "y2k pants", "wide leg pants", "drawstring pants", "baggy pants", "high waist pants", "hiking pants", "army green pants"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "IVIR High Waist Wide Leg Cargo Pants 7 Pockets Women | VELVORA",
+    metaDesc: "Shop IVIR Cargo Pants Women High Waist Wide Leg 7 Pockets Stretchy Drawstring Baggy Y2K at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "zmpsiisa-cargo-pants-8pocket-green",
+    name: "ZMPSIISA Women High Waisted Cargo Pants Combat Military Wide Leg Casual Trousers 8 Pockets",
+    category: "womens-fashion",
+    subcategory: "Bottoms",
+    price: 29.59,
+    originalPrice: 36.99,
+    rating: 4.3,
+    reviews: 1019,
+    image: "images/pants-zmpsiisa-cargo-8pocket-green.jpeg",
+    description: "ZMPSIISA's ultimate cargo pants feature 8 pockets in a high waisted wide leg combat military style. Rugged yet stylish for hiking outfits, outdoor adventures, and casual wear. Available in Green.",
+    shortDesc: "High waisted wide leg combat military cargo trousers with 8 pockets",
+    affiliateLink: "https://amzn.to/4vh7hxt",
+    colors: [],
+    tags: ["cargo pants", "military trousers", "combat pants", "wide leg pants", "8 pockets", "high waist pants", "outdoor pants", "hiking pants"],
+    featured: true,
+    badge: "20% Off 🔥",
+    metaTitle: "ZMPSIISA High Waist Cargo Military Pants 8 Pockets | VELVORA",
+    metaDesc: "Shop ZMPSIISA Women High Waisted Cargo Pants Combat Military Wide Leg 8 Pockets at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "dokotoo-cargo-jeans-widleg-apricot",
+    name: "Dokotoo Women's Casual Mid Waist Cargo Jeans Stretch Button Wide Leg Denim Pants with Pockets",
+    category: "womens-fashion",
+    subcategory: "Bottoms",
+    price: 33.83,
+    originalPrice: 36.88,
+    rating: 4.3,
+    reviews: 2699,
+    image: "images/pants-dokotoo-cargo-jeans-apricot.jpeg",
+    description: "Dokotoo's wide leg cargo jeans feature a mid waist stretch denim design with multiple pockets and a button closure. The beige apricot color gives a fresh casual look perfect for hiking outfits, street style, and everyday wear. Available in Apricot.",
+    shortDesc: "Mid waist stretch wide leg cargo denim jeans with button closure and pockets",
+    affiliateLink: "https://amzn.to/4eeA144",
+    colors: [],
+    tags: ["cargo jeans", "wide leg jeans", "denim pants", "stretch jeans", "cargo pants", "casual jeans", "women's jeans", "beige jeans"],
+    featured: true,
+    badge: "New ✨",
+    metaTitle: "Dokotoo Wide Leg Cargo Denim Jeans Women | VELVORA",
+    metaDesc: "Shop Dokotoo Women's Casual Mid Waist Cargo Jeans Stretch Wide Leg Denim Pants at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // WOMEN'S FASHION — JACKETS & OUTERWEAR
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "tankaneo-cropped-utility-jacket-khaki",
+    name: "Tankaneo Womens Cropped Jacket Zip Up Lightweight Oversized Utility Anorak Coat with Pockets",
+    category: "womens-fashion",
+    subcategory: "Jackets",
+    price: 34.99,
+    originalPrice: 45.97,
+    rating: 4.6,
+    reviews: 1018,
+    image: "images/jacket-tankaneo-utility-cropped-khaki.jpeg",
+    description: "Tankaneo's cropped utility jacket features a zip-up front, oversized fit, and multiple cargo pockets. Lightweight anorak style perfect for hiking outfits, fall outdoor looks, and casual street style. Features 3 sustainability features. 300+ bought in the past month. Available in Khaki.",
+    shortDesc: "Lightweight oversized zip-up cropped utility anorak jacket with pockets",
+    affiliateLink: "https://amzn.to/4ehh2Fd",
+    colors: [],
+    tags: ["utility jacket", "cropped jacket", "anorak jacket", "zip up jacket", "lightweight jacket", "oversized jacket", "hiking jacket", "cargo jacket"],
+    featured: true,
+    badge: "300+ Bought 🔥",
+    metaTitle: "Tankaneo Cropped Utility Anorak Jacket Women | VELVORA",
+    metaDesc: "Shop Tankaneo Womens Cropped Jacket Zip Up Lightweight Oversized Utility Anorak at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // WOMEN'S FASHION — MATCHING SETS & TRACKSUITS
+  // ═══════════════════════════════════════════════════════════
+
+  {
+    id: "prettygarden-halfzip-tracksuit-khaki",
+    name: "PRETTYGARDEN Women's 2 Piece Outfits Casual Lapel Half Zip Sweatshirt and Wide Leg Pants Tracksuit Set",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 37.99,
+    originalPrice: 48.99,
+    rating: 4.4,
+    reviews: 4939,
+    image: "images/set-prettygarden-halfzip-tracksuit-khaki.jpeg",
+    description: "PRETTYGARDEN's bestselling 2 piece tracksuit features a casual lapel half zip sweatshirt with matching wide leg pants. #1 Best Seller in Women's Tracksuits. Perfect for travel, lounge, outdoor walks, and casual everyday wear. Features 1 sustainability feature. Available in Khaki.",
+    shortDesc: "2 piece casual lapel half zip sweatshirt and wide leg pants tracksuit set",
+    affiliateLink: "https://amzn.to/4uNu7x2",
+    colors: [],
+    tags: ["tracksuit set", "two piece set", "matching set", "half zip sweatshirt", "wide leg pants", "lounge set", "casual set", "women's tracksuit"],
+    featured: true,
+    badge: "#1 Best Seller 🏆",
+    metaTitle: "PRETTYGARDEN Half Zip Sweatshirt Wide Leg Pants Tracksuit | VELVORA",
+    metaDesc: "Shop PRETTYGARDEN Women's 2 Piece Half Zip Sweatshirt Wide Leg Pants Tracksuit Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "btfbm-zipup-sweatsuit-apricot",
+    name: "BTFBM Women's Two Piece Tracksuit Long Sleeve Zip Up Sweatshirt Long Pants Jogger Sweatsuit Set",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 53.99,
+    originalPrice: 59.99,
+    rating: 4.4,
+    reviews: 1044,
+    image: "images/set-btfbm-zipup-sweatsuit-apricot.jpeg",
+    description: "BTFBM's two piece tracksuit features a full zip up sweatshirt with matching jogger pants. Cream/apricot color gives a clean girl aesthetic perfect for travel outfits, outdoor walks, and casual street style. Available in Apricot.",
+    shortDesc: "Two piece long sleeve zip up sweatshirt and long pants jogger sweatsuit set",
+    affiliateLink: "https://amzn.to/4dRubnR",
+    colors: [],
+    tags: ["sweatsuit set", "two piece set", "zip up sweatshirt", "jogger pants", "tracksuit", "matching set", "casual set", "lounge set"],
+    featured: true,
+    badge: "10% Off 🔥",
+    metaTitle: "BTFBM Two Piece Zip Up Sweatshirt Jogger Sweatsuit Set | VELVORA",
+    metaDesc: "Shop BTFBM Women's Two Piece Tracksuit Zip Up Sweatshirt Long Pants Jogger Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "anrabess-halfzip-widleg-sweatsuit-coffee",
+    name: "ANRABESS Women's 2 Piece Half Zip Sweatshirt Wide Leg Pants Airport Travel Lounge Matching Sweatsuit",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 37.99,
+    originalPrice: 54.99,
+    rating: 4.3,
+    reviews: 9124,
+    image: "images/set-anrabess-halfzip-widleg-coffee.jpeg",
+    description: "ANRABESS's 2 piece matching sweatsuit features a half zip sweatshirt with wide leg pants. Perfect for airport travel, lounge wear, and outdoor casual looks. 200+ bought in the past month. Available in Coffee brown.",
+    shortDesc: "2 piece half zip sweatshirt and wide leg pants airport travel lounge sweatsuit",
+    affiliateLink: "https://amzn.to/49PjAJh",
+    colors: [],
+    tags: ["sweatsuit set", "two piece set", "half zip", "wide leg pants", "airport outfit", "travel outfit", "lounge set", "matching set"],
+    featured: true,
+    badge: "31% Off 🔥",
+    metaTitle: "ANRABESS Half Zip Wide Leg Pants Travel Lounge Sweatsuit | VELVORA",
+    metaDesc: "Shop ANRABESS Women's 2 Piece Half Zip Sweatshirt Wide Leg Pants Airport Travel Lounge Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "trendyqueen-lounge-set-widleg-grey",
+    name: "Trendy Queen 2 Piece Matching Summer Lounge Set Side Ruching Top Wide Leg Pants with Pockets",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 26.99,
+    originalPrice: 34.99,
+    rating: 4.3,
+    reviews: 1538,
+    image: "images/set-trendyqueen-lounge-widleg-grey.jpeg",
+    description: "Trendy Queen's matching lounge set features a side ruching crop top with wide leg drawstring pants. #1 Best Seller in Women's Pant Sets. 2K+ bought in the past month. Features 1 sustainability feature. Perfect for summer outfits, casual outdoor looks, and travel. Available in Oatmeal Grey.",
+    shortDesc: "2 piece matching lounge set with side ruching crop top and wide leg pants",
+    affiliateLink: "https://amzn.to/4o3qqAK",
+    colors: [],
+    tags: ["lounge set", "two piece set", "matching set", "wide leg pants", "crop top set", "summer outfit", "casual set", "travel outfit"],
+    featured: true,
+    badge: "#1 Best Seller 🏆",
+    metaTitle: "Trendy Queen Matching Lounge Set Wide Leg Pants | VELVORA",
+    metaDesc: "Shop Trendy Queen 2 Piece Matching Summer Lounge Set Side Ruching Top Wide Leg Pants at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "prettygarden-loungewear-jogger-khaki-stripe",
+    name: "PRETTYGARDEN Women's Two Piece Loungewear Casual Long Sleeve Tops Jogger Pants Pajama Matching Set",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 13.99,
+    originalPrice: 35.99,
+    rating: 4.3,
+    reviews: 11588,
+    image: "images/set-prettygarden-loungewear-jogger-khaki.jpeg",
+    description: "PRETTYGARDEN's two piece loungewear set features a casual long sleeve top with matching jogger pants in a classic stripe design. Features 1 sustainability feature. Perfect for lounging, casual outdoor walks, and fall hiking outfits. Available in Striped Khaki.",
+    shortDesc: "Two piece casual long sleeve top and jogger pants loungewear pajama matching set",
+    affiliateLink: "https://amzn.to/4edlqG9",
+    colors: [],
+    tags: ["loungewear set", "two piece set", "jogger pants", "matching set", "long sleeve set", "pajama set", "casual set", "striped set"],
+    featured: true,
+    badge: "61% Off 🔥",
+    metaTitle: "PRETTYGARDEN Two Piece Loungewear Jogger Pants Matching Set | VELVORA",
+    metaDesc: "Shop PRETTYGARDEN Women's Two Piece Loungewear Long Sleeve Tops Jogger Pants Matching Set at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "wiholl-twopiece-sideslitpants-coffee",
+    name: "WIHOLL Two Piece Sets for Women Spring Travel Vacation Long Sleeve Lounge Sets Side Slit Wide Leg Pants",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 33.99,
+    originalPrice: 52.99,
+    rating: 4.3,
+    reviews: 3011,
+    image: "images/set-wiholl-sidelit-widleg-coffee.jpeg",
+    description: "WIHOLL's two piece lounge set features a long sleeve top with wide leg pants with a flattering side slit detail. Features 1 sustainability feature. 400+ bought in the past month. Perfect for spring travel outfits, vacation looks, and casual outdoor style. Available in Coffee.",
+    shortDesc: "Two piece long sleeve top and side slit wide leg pants spring travel lounge set",
+    affiliateLink: "https://amzn.to/4uFUy7L",
+    colors: [],
+    tags: ["two piece set", "lounge set", "wide leg pants", "side slit pants", "travel outfit", "vacation outfit", "matching set", "spring outfit"],
+    featured: true,
+    badge: "36% Off 🔥",
+    metaTitle: "WIHOLL Two Piece Side Slit Wide Leg Travel Lounge Set | VELVORA",
+    metaDesc: "Shop WIHOLL Two Piece Sets Women Spring Travel Long Sleeve Lounge Sets Side Slit Wide Leg Pants at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "anrabess-yoga-flare-croptop-set-brown",
+    name: "ANRABESS Lounge Sets for Women 2 Piece Foldover Yoga Flare Leggings Pants Crop Tops Casual Y2K Matching Tracksuit",
+    category: "womens-fashion",
+    subcategory: "Sets",
+    price: 16.99,
+    originalPrice: 29.99,
+    rating: 4.3,
+    reviews: 3644,
+    image: "images/set-anrabess-yoga-flare-croptop-brown.jpeg",
+    description: "ANRABESS's 2 piece yoga set features a fitted crop top with foldover flare leggings. Y2K inspired casual style perfect for yoga, outdoor walks, and everyday lounge wear. 500+ bought in the past month. Available in Brown.",
+    shortDesc: "2 piece foldover yoga flare leggings and crop top casual Y2K matching tracksuit set",
+    affiliateLink: "https://amzn.to/4dAVmog",
+    colors: [],
+    tags: ["yoga set", "two piece set", "flare leggings", "crop top set", "y2k outfit", "lounge set", "matching set", "casual set"],
+    featured: true,
+    badge: "43% Off 🔥",
+    metaTitle: "ANRABESS Yoga Flare Leggings Crop Top Y2K Matching Set | VELVORA",
+    metaDesc: "Shop ANRABESS Lounge Sets 2 Piece Foldover Yoga Flare Leggings Crop Tops Casual Y2K Tracksuit at VELVORA. Available on Amazon with FREE returns."
+  },
+
   // ═══════════════════════════════════════════════════════════
   // MEN'S FASHION
   // ═══════════════════════════════════════════════════════════
@@ -985,221 +1271,6 @@ var PRODUCTS = [
     metaDesc: "Shop TBRZTR 24Pcs Colored Glazed Window Press on Nails Medium Ballet Shaped at VELVORA. Available on Amazon with FREE returns."
   },
 
-
-  // ═══════════════════════════════════════════════════════════
-  // BEAUTY & SKINCARE — EYESHADOW PALETTES
-  // ═══════════════════════════════════════════════════════════
-
-  {
-    id: "ucanbe-fantasy-39color-eyeshadow-palette",
-    name: "UCANBE Fantasy 39 Colors Highly Pigmented Eyeshadow Palette Matte Shimmer Metallic Long Lasting",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 8.99,
-    originalPrice: 9.99,
-    rating: 4.5,
-    reviews: 29551,
-    image: "images/eyeshadow-ucanbe-fantasy-39color.jpeg",
-    description: "UCANBE's Fantasy eyeshadow palette features 39 highly pigmented shades in matte, shimmer, and metallic finishes — from bold vivids to everyday neutrals. Waterproof and long-lasting formula blends effortlessly. Amazon's Choice with 4K+ bought in the past month. Perfect as a makeup gift kit.",
-    shortDesc: "39 highly pigmented matte shimmer metallic eyeshadow palette — long lasting blendable",
-    affiliateLink: "https://amzn.to/4e0OFMmv",
-    colors: [],
-    tags: ["eyeshadow palette", "pigmented eyeshadow", "matte eyeshadow", "shimmer eyeshadow", "makeup palette", "colorful eyeshadow", "eyeshadow kit", "makeup gift"],
-    featured: true,
-    badge: "4K+ Bought 🔥",
-    metaTitle: "UCANBE Fantasy 39 Colors Eyeshadow Palette | VELVORA",
-    metaDesc: "Shop UCANBE Fantasy Highly Pigmented Eyeshadow Palette Matte Shimmer Metallic at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "covergirl-eye-enhancer-natural-nudes",
-    name: "COVERGIRL Eye Enhancers Eyeshadow Palette Natural Nudes 4-Pan",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 5.48,
-    originalPrice: 7.49,
-    rating: 4.3,
-    reviews: 24564,
-    image: "images/eyeshadow-covergirl-natural-nudes.jpeg",
-    description: "COVERGIRL Eye Enhancers palette in Natural Nudes features 4 coordinated shimmer shades — from champagne to warm taupe — perfect for a clean, everyday eye look. Comes with a built-in applicator. Amazon's Choice with 5K+ bought in the past month. Lightweight and easy to blend.",
-    shortDesc: "COVERGIRL 4-pan natural nudes shimmer eyeshadow palette with applicator",
-    affiliateLink: "https://amzn.to/3PBPwKa",
-    colors: [],
-    tags: ["eyeshadow palette", "nude eyeshadow", "natural eyeshadow", "covergirl eyeshadow", "everyday eyeshadow", "shimmer eyeshadow", "4 pan palette"],
-    featured: true,
-    badge: "27% Off 🔥",
-    metaTitle: "COVERGIRL Eye Enhancers Natural Nudes Eyeshadow Palette | VELVORA",
-    metaDesc: "Shop COVERGIRL Eye Enhancers Eyeshadow Palette Natural Nudes at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "bestland-2pack-12color-nude-eyeshadow",
-    name: "BestLand 2 Pack 12 Colors Nude Eyeshadow Palette Natural Matte Shimmer Glitter Pigment Waterproof Smokey Makeup Kit",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 9.99,
-    originalPrice: null,
-    rating: 4.3,
-    reviews: 18196,
-    image: "images/eyeshadow-bestland-2pack-nude.jpeg",
-    description: "BestLand's 2-pack eyeshadow set includes two 12-color palettes — one matte and one shimmer — covering warm nudes, pinks, and neutrals. Waterproof and highly pigmented formula. 3K+ bought in the past month. Perfect for building natural to smokey eye looks. Professional quality at an unbeatable price.",
-    shortDesc: "2 pack 12-color nude matte shimmer glitter pigment eyeshadow palette waterproof smokey kit",
-    affiliateLink: "https://amzn.to/4dvuplX",
-    colors: [],
-    tags: ["eyeshadow palette", "nude eyeshadow", "2 pack eyeshadow", "matte eyeshadow", "shimmer eyeshadow", "smokey eye", "waterproof eyeshadow", "makeup kit"],
-    featured: true,
-    badge: "3K+ Bought 🔥",
-    metaTitle: "BestLand 2 Pack 12 Colors Nude Eyeshadow Palette | VELVORA",
-    metaDesc: "Shop BestLand 2 Pack 12 Colors Nude Eyeshadow Palette Natural Matte Shimmer at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "revlon-colorstay-eyeshadow-quad-addictive",
-    name: "Revlon ColorStay Day to Night Eyeshadow Quad 500 Addictive — Longwear Crease & Smudge Proof",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 7.77,
-    originalPrice: 8.42,
-    rating: 4.4,
-    reviews: 18745,
-    image: "images/eyeshadow-revlon-colorstay-addictive.jpeg",
-    description: "Revlon ColorStay Day to Night Eyeshadow Quad in shade 500 Addictive features 4 coordinated neutral shimmer shades — ivory, champagne, warm bronze, and deep brown. Up to 24-hour wear with a buttery soft, crease and smudge proof formula. Amazon's Choice with 2K+ bought in the past month.",
-    shortDesc: "Revlon ColorStay 24H longwear quad eyeshadow palette — neutral shimmer shades",
-    affiliateLink: "https://amzn.to/4v5ihOa",
-    colors: [],
-    tags: ["revlon eyeshadow", "eyeshadow quad", "long lasting eyeshadow", "neutral eyeshadow", "shimmer eyeshadow", "day to night eyeshadow", "smudge proof eyeshadow"],
-    featured: true,
-    badge: "Amazon's Choice ⭐",
-    metaTitle: "Revlon ColorStay Day to Night Eyeshadow Quad Addictive | VELVORA",
-    metaDesc: "Shop Revlon ColorStay Day to Night Eyeshadow Quad 500 Addictive at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "revlon-colorstay-eyeshadow-quad-seductive",
-    name: "Revlon ColorStay Day to Night Eyeshadow Quad 530 Seductive — Longwear Crease & Smudge Proof",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 7.99,
-    originalPrice: 8.42,
-    rating: 4.5,
-    reviews: 8156,
-    image: "images/eyeshadow-revlon-colorstay-seductive.jpeg",
-    description: "Revlon ColorStay Day to Night Eyeshadow Quad in shade 530 Seductive features 4 stunning purple and lavender shimmer shades — from soft lilac to deep plum. Up to 24-hour wear with a buttery soft, crease and smudge proof formula. Amazon's Choice with 2K+ bought in the past month.",
-    shortDesc: "Revlon ColorStay 24H longwear quad eyeshadow palette — purple lavender shimmer shades",
-    affiliateLink: "https://amzn.to/4tQuBkn",
-    colors: [],
-    tags: ["revlon eyeshadow", "eyeshadow quad", "purple eyeshadow", "lavender eyeshadow", "shimmer eyeshadow", "long lasting eyeshadow", "day to night eyeshadow"],
-    featured: true,
-    badge: "Amazon's Choice ⭐",
-    metaTitle: "Revlon ColorStay Day to Night Eyeshadow Quad Seductive | VELVORA",
-    metaDesc: "Shop Revlon ColorStay Day to Night Eyeshadow Quad 530 Seductive at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "evpct-dusty-pink-single-eyeshadow",
-    name: "evpct Dusty Pink Champagne Single Eyeshadow — Rose Gold Ice Pink Nude Glitter Cream High Pigment Waterproof",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 6.99,
-    originalPrice: null,
-    rating: 4.1,
-    reviews: 2681,
-    image: "images/eyeshadow-evpct-dusty-pink-single.jpeg",
-    description: "evpct's single eyeshadow in Dusty Pink Champagne is a highly pigmented matte mauve-brown shade perfect for everyday and smokey eye looks. Waterproof monochrome formula in a compact white case. 1K+ bought in the past month. Great for older women and anyone who loves a clean, buildable eyeshadow.",
-    shortDesc: "Single highly pigmented dusty pink matte eyeshadow — waterproof monochrome compact",
-    affiliateLink: "https://amzn.to/3Q0E5vF",
-    colors: [],
-    tags: ["single eyeshadow", "matte eyeshadow", "dusty pink eyeshadow", "nude eyeshadow", "waterproof eyeshadow", "monochrome eyeshadow", "high pigment eyeshadow"],
-    featured: true,
-    badge: "1K+ Bought 🔥",
-    metaTitle: "evpct Dusty Pink Single Eyeshadow Compact | VELVORA",
-    metaDesc: "Shop evpct Dusty Pink Champagne Single Eyeshadow High Pigment Waterproof at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "baisen-diary-smokey-9color-eyeshadow",
-    name: "BAISEN DIARY 9 Color Smokey Eyeshadow Palette Highly Pigmented Matte Glitter Black Silver Gray Waterproof Blendable",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 5.99,
-    originalPrice: null,
-    rating: 4.3,
-    reviews: 1149,
-    image: "images/eyeshadow-baisen-smokey-9color.jpeg",
-    description: "BAISEN DIARY's smokey eyeshadow palette features 9 highly pigmented shades in black, silver, and gray — matte and glitter finishes — for a sultry glam look. Waterproof and long-lasting. Amazon's Choice with 700+ bought in the past month. Perfect for dramatic evening and editorial looks.",
-    shortDesc: "9-color black silver gray smokey matte glitter eyeshadow palette — waterproof blendable",
-    affiliateLink: "https://amzn.to/4x3z0DE",
-    colors: [],
-    tags: ["smokey eyeshadow", "eyeshadow palette", "black eyeshadow", "gray eyeshadow", "glitter eyeshadow", "matte eyeshadow", "waterproof eyeshadow", "dramatic eyeshadow"],
-    featured: true,
-    badge: "Amazon's Choice ⭐",
-    metaTitle: "BAISEN DIARY 9 Color Smokey Eyeshadow Palette | VELVORA",
-    metaDesc: "Shop BAISEN DIARY 9 Color Smokey Eyeshadow Palette Highly Pigmented Black Silver Gray at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "ucanbe-aromas-18color-nude-eyeshadow",
-    name: "UCANBE Aromas 18 Colors Nude Eyeshadow Palette Multi Reflective Shimmer Matte Glitter Pressed Pearls Long Lasting",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 7.99,
-    originalPrice: null,
-    rating: 4.5,
-    reviews: 15764,
-    image: "images/eyeshadow-ucanbe-aromas-18color.jpeg",
-    description: "UCANBE's Aromas eyeshadow palette features 18 beautifully curated pink and mauve shades — matte, shimmer, and pressed glitter finishes. Named shades like Bare, Dreamworld, Fairytale, and Bliss create endless romantic looks. Amazon's Choice with 800+ bought in the past month. Features 3 sustainability features.",
-    shortDesc: "18-color nude pink mauve shimmer matte glitter eyeshadow palette — long lasting",
-    affiliateLink: "https://amzn.to/4e6Gu03",
-    colors: [],
-    tags: ["eyeshadow palette", "nude eyeshadow", "pink eyeshadow", "shimmer eyeshadow", "matte eyeshadow", "glitter eyeshadow", "romantic eyeshadow", "ucanbe eyeshadow"],
-    featured: true,
-    badge: "800+ Bought 🔥",
-    metaTitle: "UCANBE Aromas 18 Colors Nude Eyeshadow Palette | VELVORA",
-    metaDesc: "Shop UCANBE Aromas 18 Colors Nude Eyeshadow Palette Shimmer Matte Glitter at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "ucanbe-86color-allset-palette-a",
-    name: "UCANBE Pretty All Set 86 Colors Eyeshadow Palette Holiday Gift Set Matte Shimmer Highlighter Contour Blush All In One",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 15.29,
-    originalPrice: null,
-    rating: 4.6,
-    reviews: 11949,
-    image: "images/eyeshadow-ucanbe-86color-allset-a.jpeg",
-    description: "UCANBE's Pretty All Set is the ultimate makeup kit — 86 colors including eyeshadow, highlighter, contour, and blush all in one triple-fold palette. Matte and shimmer finishes. Amazon's Choice with 100+ bought in the past month. Features 3 sustainability features. Perfect as a Valentine's Day or holiday gift.",
-    shortDesc: "86-color all-in-one eyeshadow highlighter contour blush palette — holiday gift set",
-    affiliateLink: "https://amzn.to/3PpPsx3",
-    colors: [],
-    tags: ["eyeshadow palette", "86 colors", "all in one palette", "makeup gift set", "highlighter palette", "contour palette", "blush palette", "holiday gift makeup"],
-    featured: true,
-    badge: "Amazon's Choice ⭐",
-    metaTitle: "UCANBE Pretty All Set 86 Colors Eyeshadow Gift Palette | VELVORA",
-    metaDesc: "Shop UCANBE Pretty All Set 86 Colors Eyeshadow Palette Holiday Gift Set at VELVORA. Available on Amazon with FREE returns."
-  },
-
-  {
-    id: "ucanbe-86color-allset-with-brushes",
-    name: "UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Makeup Set — Matte Shimmer Glitter Highlighter Contour Blush",
-    category: "beauty-skincare",
-    subcategory: "Eyeshadow",
-    price: 18.79,
-    originalPrice: null,
-    rating: 4.6,
-    reviews: 11949,
-    image: "images/eyeshadow-ucanbe-86color-with-brushes.jpeg",
-    description: "UCANBE's complete makeup set includes an 86-color eyeshadow palette with matte, shimmer, and glitter shades plus highlighter, contour, and blush — all paired with 15 professional makeup brushes. 500+ bought in the past month. Features 3 sustainability features. The perfect all-in-one Valentine's Day gift set.",
-    shortDesc: "86-color eyeshadow palette with 15 brushes — matte shimmer glitter highlighter contour blush set",
-    affiliateLink: "https://amzn.to/4tV405M",
-    colors: [],
-    tags: ["eyeshadow palette", "makeup brush set", "86 colors", "makeup gift set", "eyeshadow with brushes", "complete makeup set", "valentines day gift", "highlighter contour"],
-    featured: true,
-    badge: "500+ Bought 🔥",
-    metaTitle: "UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Set | VELVORA",
-    metaDesc: "Shop UCANBE 86 Colors Eyeshadow Palette with 15 Brushes Makeup Set at VELVORA. Available on Amazon with FREE returns."
-  },
-
   // ─────────────────────────────────────────────────────────
   // ADD MORE BEAUTY PRODUCTS BELOW
   // ─────────────────────────────────────────────────────────
@@ -1210,9 +1281,9 @@ var PRODUCTS = [
 // SUBCATEGORY DEFINITIONS
 // ============================================================
 var SUBCATEGORIES = {
-  "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Knitwear","Accessories","Shoes","Bags"],
+  "womens-fashion": ["Rings","Tops","Bottoms","Skirts","Dresses","Jackets","Sets","Knitwear","Accessories","Shoes","Bags"],
   "mens-fashion": ["Shirts","Blazers","Trousers","Casual","Accessories","Shoes","Jackets","Suits"],
-  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care","Press On Nails","Eyeshadow"]
+  "beauty-skincare": ["Serums","Moisturizers","Makeup","Cleansers","Sunscreen","Lip Care","Eye Care","Hair Care","Press On Nails"]
 };
 
 // ============================================================
