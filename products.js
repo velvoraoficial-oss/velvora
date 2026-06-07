@@ -1464,6 +1464,116 @@ var PRODUCTS = [
     metaDesc: "Shop Purple Chrome Press On Nails Long Almond Soft Gel Glossy Aurora Mirror at VELVORA. Available on Amazon with FREE returns."
   },
 
+
+  // ─────────────────────────────────────────────────────────
+  // NEW SKINCARE PRODUCTS ADDED BY PINTEREST AGENT - 2026-06-07
+  // ─────────────────────────────────────────────────────────
+
+  {
+    id: "cosrx-snail-mucin-96-essence",
+    name: "COSRX Snail Mucin 96% Power Repairing Essence 3.38 fl.oz",
+    category: "beauty-skincare",
+    subcategory: "Serums",
+    price: 25.99,
+    originalPrice: 29.99,
+    rating: 4.8,
+    reviews: 125000,
+    image: "images/skincare-cosrx-snail-mucin.jpg",
+    description: "COSRX Snail Mucin 96% Power Repairing Essence is a viral K-beauty serum that deeply hydrates, repairs skin barrier and fades dark spots. Lightweight watery texture absorbs instantly. Over 125,000 five-star reviews. Fragrance-free and suitable for all skin types including sensitive skin.",
+    shortDesc: "Viral K-beauty snail mucin serum for hydration and skin repair — 3.38 fl.oz",
+    affiliateLink: "https://www.amazon.com/dp/B0CQHKK9GV?tag=velvora061-20",
+    colors: [],
+    tags: ["snail mucin", "kbeauty", "serum", "skincare", "hydration", "repairing", "cosrx", "essence"],
+    featured: true,
+    badge: "Viral Pick 🔥",
+    metaTitle: "COSRX Snail Mucin 96% Power Repairing Essence | VELVORA",
+    metaDesc: "Shop COSRX Snail Mucin 96% Power Repairing Essence at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "cerave-moisturizing-cream-19oz",
+    name: "CeraVe Moisturizing Cream 19 oz — Daily Face and Body Moisturizer",
+    category: "beauty-skincare",
+    subcategory: "Moisturizers",
+    price: 18.97,
+    originalPrice: 22.00,
+    rating: 4.8,
+    reviews: 98000,
+    image: "images/skincare-cerave-moisturizing-cream.jpg",
+    description: "CeraVe Moisturizing Cream with 3 essential ceramides and hyaluronic acid provides 24-hour hydration for dry to very dry skin. Developed with dermatologists. Non-comedogenic, fragrance-free and suitable for sensitive skin. A staple in every skincare routine.",
+    shortDesc: "Dermatologist-recommended moisturizing cream with ceramides and hyaluronic acid — 19 oz",
+    affiliateLink: "https://www.amazon.com/dp/B09C3B7G3D?tag=velvora061-20",
+    colors: [],
+    tags: ["cerave", "moisturizer", "ceramides", "skincare", "hydration", "sensitive skin", "dermatologist"],
+    featured: true,
+    badge: "Dermatologist Pick ⭐",
+    metaTitle: "CeraVe Moisturizing Cream 19oz | VELVORA",
+    metaDesc: "Shop CeraVe Moisturizing Cream 19oz at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "the-ordinary-niacinamide-10-zinc",
+    name: "The Ordinary Niacinamide 10% + Zinc 1%",
+    category: "beauty-skincare",
+    subcategory: "Serums",
+    price: 12.90,
+    originalPrice: 15.00,
+    rating: 4.6,
+    reviews: 75000,
+    image: "images/skincare-the-ordinary-niacinamide.jpg",
+    description: "The Ordinary Niacinamide 10% + Zinc 1% visibly reduces appearance of blemishes and pores. Niacinamide balances visible sebum activity while zinc supports clear skin. Lightweight water-based serum suitable for all skin types.",
+    shortDesc: "High-strength niacinamide serum for pores and blemishes — 30ml",
+    affiliateLink: "https://www.amazon.com/dp/B07XQXZXJF?tag=velvora061-20",
+    colors: [],
+    tags: ["niacinamide", "the ordinary", "serum", "pores", "blemishes", "skincare", "zinc", "acne"],
+    featured: true,
+    badge: "TikTok Viral 🔥",
+    metaTitle: "The Ordinary Niacinamide 10% + Zinc 1% | VELVORA",
+    metaDesc: "Shop The Ordinary Niacinamide 10% + Zinc 1% at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "laneige-lip-sleeping-mask-berry",
+    name: "Laneige Lip Sleeping Mask — Berry 0.7 oz",
+    category: "beauty-skincare",
+    subcategory: "Lip Care",
+    price: 24.00,
+    originalPrice: 26.00,
+    rating: 4.7,
+    reviews: 45000,
+    image: "images/skincare-laneige-lip-sleeping-mask.jpg",
+    description: "Laneige Lip Sleeping Mask in Berry is a fan-favorite overnight lip treatment that repairs and moisturizes lips while you sleep. Formulated with Moisture Wrap technology and vitamin C to smooth, hydrate and brighten lips. Wake up to baby-soft plump lips every morning.",
+    shortDesc: "Overnight lip mask with berry scent for soft plump lips — 0.7 oz",
+    affiliateLink: "https://www.amazon.com/dp/B08L5NP6NG?tag=velvora061-20",
+    colors: [],
+    tags: ["laneige", "lip mask", "lip care", "kbeauty", "overnight", "lip treatment", "berry", "plump lips"],
+    featured: true,
+    badge: "Pinterest Viral 💕",
+    metaTitle: "Laneige Lip Sleeping Mask Berry | VELVORA",
+    metaDesc: "Shop Laneige Lip Sleeping Mask Berry at VELVORA. Available on Amazon with FREE returns."
+  },
+
+  {
+    id: "revlon-one-step-hair-dryer-brush",
+    name: "Revlon One-Step Hair Dryer and Volumizer Hot Air Brush",
+    category: "beauty-skincare",
+    subcategory: "Hair Care",
+    price: 49.99,
+    originalPrice: 59.99,
+    rating: 4.5,
+    reviews: 320000,
+    image: "images/beauty-revlon-one-step-hair-dryer.jpg",
+    description: "The Revlon One-Step Hair Dryer and Volumizer is the original viral hot air brush that dries and volumizes in one step. Oval brush design mimics a professional round brush blowout. Multiple heat and speed settings. The most reviewed hair tool on Amazon with over 320,000 ratings.",
+    shortDesc: "Viral hot air brush that dries and volumizes hair in one step",
+    affiliateLink: "https://www.amazon.com/dp/B07DHXMGMK?tag=velvora061-20",
+    colors: [],
+    tags: ["revlon", "hair dryer brush", "volumizer", "hot air brush", "blowout", "hair styling", "hair tools"],
+    featured: true,
+    badge: "320K Reviews 🌟",
+    metaTitle: "Revlon One-Step Hair Dryer and Volumizer | VELVORA",
+    metaDesc: "Shop Revlon One-Step Hair Dryer Volumizer at VELVORA. Available on Amazon with FREE returns."
+  },
+
   // ─────────────────────────────────────────────────────────
   // ADD MORE BEAUTY PRODUCTS BELOW
   // ─────────────────────────────────────────────────────────
